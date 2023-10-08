@@ -1,6 +1,6 @@
 ---
-title: "Replication of Study 1 -- Development of Holistic Episodic Recollection by Sample & Sample (2019, Psychological Science)"
-replication author: "Sarah Tung" (contact information)"
+title: "Replication of Study 1 -- Development of Holistic Episodic Recollection by Ngo, Horner, Newcombe, and Olson (2019, Psychological Science)"
+replication author: "Sarah Tung" (sstung@stanford.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
   html:
@@ -12,11 +12,15 @@ format:
 
 ## Introduction
 
-Ngo et al. (2019) sought to determine the extent to which different components of a memory are interconnected and to understand whether cueing one part of a memory aids in the retrieval of another part of the same memory. In my research program, I am delving into how infants learn and recognize statistical regularities in their environment. More specifically, I'm interested in how they leverage these regularities to form novel object representations. The concept of holistic memory retrieval from Ngo et al.\'s study aligns closely with our understanding of cognitive representations. Their experimental approach emphasizes the identification of patterns, similarities, and associations, which is foundational to my work. By building on this foundation, I hope to predict and comprehend these elements in infants. My ultimate goal is to gain insights into how infants adeptly engage with their environment, especially in terms of how they retrieve memories, as highlighted in the study by Ngo et al. (2019).
+Ngo et al. (2019) sought to determine the extent to which different components of a memory are interconnected and to understand whether cueing one part of a memory aids in the retrieval of another part of the same memory. In my research program, I am delving into how infants learn and recognize statistical regularities in their environment. More specifically, I'm interested in how they leverage these regularities to form novel object representations. The concept of holistic memory retrieval from the study aligns closely with our understanding of cognitive representations. Their experimental approach emphasizes the identification of patterns, similarities, and associations, which is foundational to my work. By building on this foundation, I hope to predict and comprehend these elements in infants. My ultimate goal is to gain insights into how infants adeptly engage with their environment, especially in terms of how they retrieve memories, as highlighted in the study by Ngo et al. (2019).
 
 I am planning to gather data from at least 30 young adults using Prolific. This is an attempt to not only match but exceed the sample size of the study (N = 31). The experiment will present participants with a variety of stimuli including images of familiar cartoon characters like Cinderella and Moana, cartoon illustrations of everyday objects such as a jump rope or a watch, and cartoon settings that can either be indoors like a bedroom or outdoors like a playground. Using this combination of stimuli, I will design 24 unique events. Each event will include one character, object, and scene, and will be shown to participants for a duration of six seconds - this is the encoding or memory-building phase. Right after this phase, participants will complete a memory task. They will be given a cue from one of the events (either a character, object, or scene) and given four options to choose from. Of these, one will be the correct association from the encoding phase, while the other three will be distractions. 
 
 One of the challenges I foresee is maintaining timing accuracy. The study hinges on the precise timing of stimuli, and there's the risk of potential lags or inconsistencies. As participants complete the experiment in real-time, it will also be important to have a reliable system in place to capture and record data without any losses. 
+
+Project repository: https://github.com/psych251/ngo19_rescue
+
+Original paper: https://github.com/psych251/ngo19_rescue/blob/main/original_paper/ngo-et-al-2019-development-of-holistic-episodic-recollection.pdf
 
 ## Summary of prior replication attempt
 
