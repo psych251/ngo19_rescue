@@ -19,17 +19,17 @@ I am planning to gather data from at least 31 young adults using Prolific. This 
 
 One of the challenges I foresee is maintaining timing accuracy. The study hinges on the precise timing of stimuli, and there's the risk of potential lags or inconsistencies. As participants complete the experiment in real-time, it will also be important to have a reliable system in place to capture and record data without any losses. 
 
-[Project repository](https://github.com/psych251/ngo19_rescue)
+Project repository: https://github.com/psych251/ngo19_rescue
 
-[Original paper](https://github.com/psych251/ngo19_rescue/blob/main/original_paper/ngo-et-al-2019-development-of-holistic-episodic-recollection.pdf)
+Original paper: https://github.com/psych251/ngo19_rescue/blob/main/original_paper/ngo-et-al-2019-development-of-holistic-episodic-recollection.pdf
 
 ## Summary of prior replication attempt
 
-Based on the prior write-up, describe any differences between the original and 1st replication in terms of methods, sample, sample size, and analysis. Note any potential problems such as exclusion rates, noisy data, or issues with analysis.
+In comparing the methodologies between the original study and the 1st replication, I noticed 3 main differences. First, the original study had a larger participant pool of 31 individuals, whereas the replication was conducted with a notably smaller group of just 12 participants. This decision in the replication was influenced by effect size considerations: while the original study reported an effect size of 1.32, the replication aimed for an effect size of 0.8. This reduction in the targeted effect size may have implications for the study's power and sensitivity. Additionally, the testing environments differed between the original study and the 1st replication. In the original, participants used a 13-inch laptop screen in a controlled setting. In the replication, participants did the experiment remotely on their own laptop or desktop. This means the replication couldn't control for screen size, resolution, or potential distractions in participants' environments.
 
 ## Methods
 
-### Power Analysis
+### Power Analysis - will do in class this week 
 
 Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
 
@@ -41,27 +41,55 @@ How much power does your planned sample have for original effect? For an attenua
 
 Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
 
+I plan to have a sample size of N = 31.
+
 ### Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+I will precisely follow the methods quoted directly from the original study in my experiment.
 
-### Procedure
+"We sampled 24 cartoon images of distinct scenes (12 indoor scenes, e.g., an aquarium; 12 outdoor scenes, e.g., a playground), 24 cartoon images of com- mon objects (e.g., a watch), and 24 images of cartoon characters from nonoverlapping movies or books (12 males, e.g., Pinocchio; 12 females, e.g., Alice) from the Google Images search engine. From this pool of selected images, we then constructed 24 "events," each consist- ing of a scene (e.g., an aquarium), a person (e.g., Alice), and an object (e.g., a wallet). The event assignment of the elements was randomized, with the exception that items with preexperimental associations (e.g., books and library) were not assigned to the same event. Every possible cue--test combination of each event was tested, resulting in six test trials per event (1 = cue: scene, test: person; 2 = cue: scene, test: object; 3 = cue: person, test: scene; 4 = cue: person, test: object; 5 = cue: object, test: scene; 6 = cue: object, test: person) and totaling 144 test trials."
 
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+**Procedure**
+
+In my experiment, I will adhere closely to the methods directly quoted from the original study. While the original study was conducted in-person on a 13-inch laptop screen---likely aiding in attention control and minimizing external distractions---I will ensure participants use only a laptop or desktop. Additionally, the experiment will automatically launch in fullscreen mode and notify me if a participant exits this mode.
+
+"All participants were tested individually. The task procedure administered to children consisted of two encoding-test blocks, which occurred immediately after one another. Each block consisted of 12 encoding and 72 test trials, all presented on a 13-in. laptop screen. Prior to encoding, participants were told that they would see many different stories and that they should pay close attention to all of the different elements, including the scene, person, and object in each story. Then, participants viewed a series of events (12 s each; 0.5 s intertrial interval). A short audio-recorded narrative accompanied each event (e.g., \"Alice went to the aquarium, but she dropped her wallet there; the wallet was lost in the aquarium\"; see [Fig. 1a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/)). Each narrative consisted of three sentences, with each sentence highlighting one pairwise association within the event. The order of the pairwise associations within each narrative was not fixed or counterbalanced across the events. The narrative was constructed this way to engage children in the task and to increase the likelihood that children would pay attention to all of the elements in an event. Prior to encoding, we provided one example (a playground, Elastigirl, a hat) in order to acquaint the participants with the encoding task.
+
+Immediately after the encoding phase of each block, participants performed a self-paced four-alternative forced-choice task. We tested participants on every possible cue--retrieval combination of each studied event, resulting in 6 test trials per event, which totaled 72 test trials per block. On each trial, a cue and four options were presented simultaneously on the screen (see [Fig. 2a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig2-0956797619879441/)). Among four options, one was a target---the correct item because it belonged to the same event as the cue. The three lures were same-category elements from different events. The lures always came from the events that contained same-sex characters, so that participants could not eliminate lures on the basis of general mnemonic heuristics (e.g., remembering that there was a female character who went to the aquarium). Across all 24 events, any two test trials that had overlapping cue items (e.g., A~B~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^ and A~C~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^) or in which tested items (e.g., B~A~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^ and C~A~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^) shared only one foil item (out of three) with respect to their event membership. For example, for the A~B~ test trial of Event 1, the foils included the B elements from Events 2, 3, and 4, whereas for the A~C~ trial of Event 1, the foils included the C elements from Events 3, 5, and 7 (one B and one C foil, both from Event 3). Furthermore, all items served as foils an equal number of times across all 144 test trials. Children were asked to point to one of the four options that belonged to the same story as the cue on the left side of the screen. Positions of the correct answer were counterbalanced across the entire test phase. There were no missing responses, as the response time was unrestricted. The memory task took approximately 40 min.
+
+The adult task procedure was similar to the child task procedure but with a few differences. First, the whole procedure was administered in a single session comprising 24 encoding events and 144 test trials. Second, no narratives were implemented at the encoding phase to avoid potential ceiling performance in young adults. Third, each encoding trial was presented for 6 s (see [Fig. 1b](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/))."
+
+![](images/10.1177_0956797619879441-fig1.jpg)
+
+[Fig. 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/)
+
+Procedure of the child (a) and adult (b) multielement-event task. In the child task, participants viewed 24 events presented in two encoding sessions, each consisting of 12 events. Each event lasted 12 s and was accompanied by an audio-recorded narrative. The test phase of each block consisted of 72 test trials. In the adult task procedure, participants studied 24 events (6 s each) together and without the recorded narrative. The test phase consisted of 144 test trials. Note that the characters shown in each event were well-known cartoon characters (e.g., Alice, Pinocchio), which have been replaced in this illustration for copyright concerns.
+
+![](images/10.1177_0956797619879441-fig2.jpg)
+
+[Fig. 2.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig2-0956797619879441/)
+
+A schematic depiction of the task design and the 2 × 2 contingency table used to estimate retrieval dependency. Examples of six retrieval types per event in the test phase are shown in (a). Each element of a studied event took a turn serving as the cue (item presented on the left side of the screen) and the tested element (one of the four options presented inside the red box). The schematic (b) shows how the proportion of joint retrieval for AB and AC pairs was computed for each participant. The contingency table shows the proportion of events that fell within each of the four categories: Both AB and AC pairs were retrieved correctly, both AB and AC pairs were retrieved incorrectly, AB was retrieved correctly and AC was retrieved incorrectly, and AB was retrieved incorrectly and AC was retrieved correctly. The proportion of events in the blue-outlined boxes (both pairs correct and both pairs incorrect) were added, and the sum was divided by the total number of events. Note that the characters shown in each event were well-known cartoon characters (e.g., Alice, Pinocchio), which have been replaced in this illustration for copyright concerns.
 
 ### Controls
 
-What attention checks, positive or negative controls, or other quality control measures are you adding so that a (positive or negative) result will be more interpretable?
+To confirm that participants are actively engaged and attentive throughout the experiment, I will introduce key press attention checks every 12 trials, resulting in a total of 12 attention checks across the 144 trials. For these checks, participants will be prompted with instructions like, "Please press the \[chosen key\] key to continue." The chosen keys for these checks will be diverse, including "j", "k", "f", "d", "s", and "a", to prevent any rote memorization or autopilot responses. These attention checks will help filter out participants who might not be genuinely engaged in the task, ensuring that our data reflects genuine cognitive responses.
+
+To further validate the task's functionality and participants' comprehension of the instructions, I am considering the incorporation of a positive control. This would consist of a set of trials where, based on the contextual similarity of the stimuli, we anticipate almost all participants to answer correctly. These contextually congruent trials are designed on the hypothesis that when stimuli are more related or familiar in context, participants are more likely to respond accurately. However, this is based on my own speculation, so I'm not sure if I should add this.
 
 ### Analysis Plan
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section. The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.
+I will conduct the following analysis precisely as directly quoted below with the young adult group. Although this quote mentions conducting a one-sample t test for 4 to 6 year olds, the original authors did the same analysis for their young adult pool as well.
 
-**Clarify key analysis of interest here** You can also pre-specify additional analyses you plan to do.
+"The primary questions of this research were whether holistic recollection is evident at the ages of 4 and 6 years, during a crucial developmental window of robust gains in episodic memory, and whether holistic recollection changes with age. To answer the first question, **we conducted a one-sample *t* test** to determine whether dependency (data -- independent model) exceeded zero for each age group."
+
+I also suspect that individual trials with contextually similar stimuli lead to better performance than trials with non-contextually similar stimuli so **I plan to run a follow-up paired-samples t-test**. I will label which trials are contextually similar and which are not, compute the performance measure (e.g., accuracy, response time) for each trial type (contextually similar vs. non-contextually similar), and use a paired-samples t-test to compare the mean performance across the two types of trials.
 
 ### Differences from Original Study and 1st replication
 
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+The original study was conducted with 31 participants in a controlled, in-person setting using a 13-inch laptop. In contrast, the first replication used a smaller sample size of 12 participants and was administered remotely via Prolific, allowing participants to use any size of laptop or desktop. Both studies followed the same analysis plan.
+
+For the second replication, I aim to collect data from 31 participants, mirroring the original study's sample size. This step is to determine if the discrepancies in the first replication arose due to a power issue. If, even with the larger sample, the results still fail to align with the original study, I'll use a paired samples t-test, which was not used in either the original or first replication. The goal is to probe if the variance emerged from the contextual similarity of the stimuli pairs. If a significant association is identified between contextual stimuli and accuracy, I plan to rerun the study, excluding those particular contextual pairs.
 
 ### Methods Addendum (Post Data Collection)
 
@@ -86,11 +114,30 @@ Data preparation following the analysis plan.
 
 #### Load Relevant Libraries and Functions
 
+library(tidyverse)
+
 #### Import data
+
+data <- read_csv("participant_data.csv")
 
 #### Data exclusion / filtering
 
+filtered_data <- data %>%
+  filter(accuracy < 1, fullscreen == 0, key_press_correct == 1)
+
 #### Prepare data for analysis - create columns etc.
+
+data <- data %>% mutate(new_column = ifelse(condition, value_if_true, value_if_false))
+
+# AB and AC refer to specific pairwise associations within an event. For example, A could represent a person and B could represent an object. Thus, AB would represent the association between the person and object. 
+
+data <- data %>%
+   mutate(ABAC_correct = ifelse(AB == 1 & AC == 1, 1, 0),
+          ABAC_incorrect = ifelse(AB == 0 & AC == 0, 1, 0),
+          AB_correct_AC_incorrect = ifelse(AB == 1 & AC == 0, 1, 0),
+          AC_correct_AB_incorrect = ifelse(AB == 0 & AC == 1, 1, 0))
+
+
 ```
 
 ### Results of control measures
