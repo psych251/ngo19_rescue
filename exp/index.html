@@ -1,0 +1,577 @@
+<!-- 
+    Shawn T. Schwartz, 2021 updated by Sarah Tung, 2023 
+    <stschwartz@stanford.edu> 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ngo</title>
+    <script src="https://unpkg.com/jspsych@7.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.0.0"></script>
+    <link href="https://unpkg.com/jspsych@7.0.0/css/jspsych.css" rel="stylesheet" type="text/css" />
+    <style>
+        .upperline {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .dem {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            text-align: left;
+            font-weight: 500;
+            font-size: 1.3em;
+            padding: .2em 0;
+            color: #069;
+        }
+
+        .shim {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-style: italic;
+        }
+
+        .small {
+            font-size: .95em;
+        }
+
+        .dem-sec {
+            margin-top: 5px;
+            margin-bottom: 50px;
+        }
+
+        .radioButtons > label {
+            margin: 0em 1em 0em 1em;
+            display: block;
+            text-align: left;
+        }
+
+        .radioButtons > label:hover {
+            background-color: #069;
+            border-radius: 3px;
+            color: #fff;
+        }
+        
+        .radioButtons input {
+            margin: 0em .5em .3em .5em;
+        }
+        
+        .radioButtons input:focus {
+            outline: none;
+        } 
+
+        .consent {
+            width: 500px;
+        }
+        
+        .consent label {
+            width: 425px;
+            display: inline-block;
+        }
+
+        .consent textarea {
+            background: none repeat scroll 0% 0% #F2F2F2;
+            border: 1px solid #CCC;
+            font-family: serif;
+            height: 300px;
+            width: 100%;
+            overflow: auto;
+            padding: 6px;
+            border-radius: 3px;
+            display: block;
+        }
+
+        .collectorInput {
+            padding: .3em .4em;
+            border-radius: 4px;
+            border: 1px solid #bfbfbf;
+        }
+
+        .collectorInput:active, .collectorInput:hover, .collectorInput:focus {
+            border-color: #09c;
+            outline: none;
+            box-shadow: inset 1px 1px 4px 0px #C9C9C9;
+        }
+    </style>
+  </head>
+  <body></body>
+  <script>
+
+    // constants
+    const VERBOSE = false;
+    const STUDY_TIME = 6000; // ms
+    const ISI = 500; // ms
+    const AFC_CHOICES = ['e', 'u', 'c', 'n'];
+    const ATTENTION_CHOICES = ['j', 'k', 'f', 'd', 's', 'a'];
+    const EXAMPLE_ENCODING = "img/encoding_events/Example.jpg";
+    const EXAMPLE_TESTING = "img/testing_events/Example.png";
+    const EXAMPLE_KEYBOARD = "img/instructions/kb_layout.png";
+
+    // encoding stimuli
+    var num_events = 24;
+    var encoding_stim_arr = [];
+    var encoding_stim_dict = [];
+    for(var i = 1; i <= num_events; i++) {
+        if(i % 12 == 0) {
+            attention_duration = STUDY_TIME
+        } else {
+            attention_duration = 0
+        }
+        attention_key = ATTENTION_CHOICES[Math.floor(Math.random() * ATTENTION_CHOICES.length)];
+        encoding_stim_arr.push("img/encoding_events/Event_" + i + ".jpg");
+        encoding_stim_dict.push({
+            stimulus: "img/encoding_events/Event_" + i + ".jpg",
+            attention_stim: "Please press the <strong><u>" + attention_key + "</u></strong> key",
+            attention_choice: attention_key,
+            attention_duration: attention_duration
+        })
+    }
+
+    console.log(encoding_stim_dict);
+
+    if(VERBOSE) console.log(encoding_stim_dict);
+
+    // retrieval stimuli
+    var retrieval_groups = ['Ab', 'Ac', 'Ba', 'Bc', 'Ca', 'Cb'];
+    var retrieval_stim_arr = [];
+    var retrieval_stim_dict = [];
+    var afc_assignment_counter = 1;
+
+    /**
+     * counterbalanced orderings by retrieval group (positions)
+     * Ab: 1, 2, 3, 4 *
+     * Ac: 2, 3, 4, 1 **
+     * Ba: 3, 4, 1, 2
+     * Bc: 4, 1, 2, 3
+     * Ca: 1, 2, 3, 4 *
+     * Cb: 2, 3, 4, 1 **
+     */
+
+    // load stim array for all retrieval groups
+    for(var i = 0; i < retrieval_groups.length; i++) {
+        for(var j = 1; j <= num_events; j++) {
+            retrieval_stim_arr.push("img/testing_events/" + retrieval_groups[i] + "/Test_" + retrieval_groups[i] +  "_Event_" + j + ".jpg");
+        }
+    }
+
+    // separate dictionary generations by counterbalanced group (to ensure proper correct_response assignment)
+    // Ab/Ca (1, 2, 3, 4)
+    var retrieval_groups_subset_one = ['Ab', 'Ca'];
+    for(var i = 0; i < retrieval_groups_subset_one.length; i++) {
+        for(var j = 1; j <= num_events; j++) {
+            if(afc_assignment_counter > 4) {
+                afc_assignment_counter = 1;
+            }
+            if(afc_assignment_counter % 4 != 0) {
+                afc_assignment_counter = afc_assignment_counter;
+            }
+            retrieval_stim_dict.push({
+                stimulus: "img/testing_events/" + retrieval_groups_subset_one[i] + "/Test_" + retrieval_groups_subset_one[i] +  "_Event_" + j + ".jpg", 
+                retrieval_group: retrieval_groups_subset_one[i],
+                correct_response: AFC_CHOICES[afc_assignment_counter-1]
+            });
+            afc_assignment_counter += 1;
+        }
+    }
+
+    // Ba (3, 4, 1, 2)
+    var retrieval_groups_subset_two = ['Ba'];
+    afc_assignment_counter = 3;
+    for(var i = 0; i < retrieval_groups_subset_two.length; i++) {
+        for(var j = 1; j <= num_events; j++) {
+            if(afc_assignment_counter > 4) {
+                afc_assignment_counter = 1;
+            }
+            if(afc_assignment_counter % 4 != 0) {
+                afc_assignment_counter = afc_assignment_counter;
+            }
+            retrieval_stim_dict.push({
+                stimulus: "img/testing_events/" + retrieval_groups_subset_two[i] + "/Test_" + retrieval_groups_subset_two[i] +  "_Event_" + j + ".jpg", 
+                retrieval_group: retrieval_groups_subset_two[i],
+                correct_response: AFC_CHOICES[afc_assignment_counter-1]
+            });
+            afc_assignment_counter += 1;
+        }
+    }
+
+    // Bc (4, 1, 2, 3)
+    var retrieval_groups_subset_three = ['Bc'];
+    afc_assignment_counter = 4;
+    for(var i = 0; i < retrieval_groups_subset_three.length; i++) {
+        for(var j = 1; j <= num_events; j++) {
+            if(afc_assignment_counter > 4) {
+                afc_assignment_counter = 1;
+            }
+            if(afc_assignment_counter % 4 != 0) {
+                afc_assignment_counter = afc_assignment_counter;
+            }
+            retrieval_stim_dict.push({
+                stimulus: "img/testing_events/" + retrieval_groups_subset_three[i] + "/Test_" + retrieval_groups_subset_three[i] +  "_Event_" + j + ".jpg", 
+                retrieval_group: retrieval_groups_subset_three[i],
+                correct_response: AFC_CHOICES[afc_assignment_counter-1]
+            });
+            afc_assignment_counter += 1;
+        }
+    }
+
+    // Ac/Cb (2, 3, 4, 1)
+    var retrieval_groups_subset_four = ['Ac', 'Cb'];
+    afc_assignment_counter = 2;
+    for(var i = 0; i < retrieval_groups_subset_four.length; i++) {
+        for(var j = 1; j <= num_events; j++) {
+            if(afc_assignment_counter > 4) {
+                afc_assignment_counter = 1;
+            }
+            if(afc_assignment_counter % 4 != 0) {
+                afc_assignment_counter = afc_assignment_counter;
+            }
+            retrieval_stim_dict.push({
+                stimulus: "img/testing_events/" + retrieval_groups_subset_four[i] + "/Test_" + retrieval_groups_subset_four[i] +  "_Event_" + j + ".jpg", 
+                retrieval_group: retrieval_groups_subset_four[i],
+                correct_response: AFC_CHOICES[afc_assignment_counter-1]
+            });
+            afc_assignment_counter += 1;
+        }
+    }
+
+    if(VERBOSE) console.log(retrieval_stim_dict);
+
+    // extract retrieval group blocks from dict for consective randomized block design
+    var retrieval_stim_Ab_dict = [];
+    var retrieval_stim_Ac_dict = [];
+    var retrieval_stim_Ba_dict = [];
+    var retrieval_stim_Bc_dict = [];
+    var retrieval_stim_Ca_dict = [];
+    var retrieval_stim_Cb_dict = [];
+
+    for(var key in retrieval_stim_dict) {
+        if(retrieval_stim_dict[key].retrieval_group == "Ab")
+            retrieval_stim_Ab_dict.push(retrieval_stim_dict[key]);
+        else if(retrieval_stim_dict[key].retrieval_group == "Ac")
+            retrieval_stim_Ac_dict.push(retrieval_stim_dict[key]);
+        else if(retrieval_stim_dict[key].retrieval_group == "Ba")
+            retrieval_stim_Ba_dict.push(retrieval_stim_dict[key]);
+        else if(retrieval_stim_dict[key].retrieval_group == "Bc")
+            retrieval_stim_Bc_dict.push(retrieval_stim_dict[key]);
+        else if(retrieval_stim_dict[key].retrieval_group == "Ca")
+            retrieval_stim_Ca_dict.push(retrieval_stim_dict[key]);
+        else if(retrieval_stim_dict[key].retrieval_group == "Cb")
+            retrieval_stim_Cb_dict.push(retrieval_stim_dict[key]);
+        else
+            console.log("Error in parsing retrieval stim categories...");
+    }
+
+    // server connection to save data
+    function saveData(filename, filedata) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'save_data.php');
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({filename: filename, filedata: filedata}));        
+    };
+
+    // initialize jsPsych
+    var jsPsych = initJsPsych({
+        on_finish: function() {
+            // get current time
+            var timestamp = Date.now();
+
+            // gather and save all data to server
+            var all_data = jsPsych.data.get();
+            console.log(all_data.csv());
+            saveData(file_pattern_data + "_" + timestamp, all_data.csv());
+            console.log("Data saved at: " + file_pattern_data);
+            
+            var interaction_data = jsPsych.data.getInteractionData();
+            console.log(interaction_data.csv());
+            saveData(file_pattern_focus  + "_" + timestamp, interaction_data.csv());
+            console.log("Data saved at: " + file_pattern_focus);
+
+            // load final message onto page before redirect back to Prolific
+            var final_message = "<br /><br /><br /><center><strong>Thank you for your participation in completing the study. Your data are being saved now. <br />The page will automatically redirect you back to Prolific.co in about 5 seconds once the data have been saved successfully.</strong></center>";
+            document.getElementsByTagName('body')[0].innerHTML = final_message;
+
+            // auto redirect back to prolific with completion code
+            // delay redirect for 7 seconds
+            setTimeout(function() {
+                window.location = "https://app.prolific.co/submissions/complete?cc=2F3AD181";
+            }, 7000);   
+        }
+    });
+
+    // capture info from Prolific
+    var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
+    var study_id = jsPsych.data.getURLVariable('STUDY_ID');
+    var session_id = jsPsych.data.getURLVariable('SESSION_ID');
+
+    jsPsych.data.addProperties({
+        subject_id: subject_id,
+        study_id: study_id,
+        session_id: session_id
+    });
+    
+    // make filename patterns for each participants data
+    var file_pattern_data = subject_id + "_" + study_id + "_" + session_id + "_data";
+    var file_pattern_focus = subject_id + "_" + study_id + "_" + session_id + "_focus";
+
+    // create timeline
+    var timeline = [];
+
+    // preload stim
+    var preload = {
+        type: jsPsychPreload,
+        images: [EXAMPLE_ENCODING, EXAMPLE_TESTING, EXAMPLE_KEYBOARD, encoding_stim_arr, retrieval_stim_arr],
+        show_detailed_errors: true
+    };
+    timeline.push(preload);
+
+    // force browser into full screen mode
+    var enter_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: true
+    };
+    timeline.push(enter_fullscreen);
+
+    // add landing page
+    var landing_page = {
+        type: jsPsychInstructions,
+        show_clickable_nav: true,
+        pages: [
+            "By answering the following questions, you are participating in a \
+            study being performed by cognitive scientists in the Stanford \
+            Department of Psychology. If you have questions about this \
+            research, please contact us at <a href=\"mailto:stanfordpsych251@gmail.com\"> \
+            stanfordpsych251@gmail.com</a>. You must be at least 18 years \
+            old to participate. Your participation in this research is \
+            voluntary. You may decline to answer any or all of the \
+            following questions. You may decline further participation, \
+            at any time, without adverse consequences. Your anonymity is \
+            assured; the researchers who have requested your participation \
+            will not receive any personal information about you."
+        ]
+    };
+    timeline.push(landing_page);
+
+    // add welcome message
+    var welcome = {
+        type: jsPsychHtmlKeyboardResponse,
+        choices: 'b',
+        post_trial_gap: 1000,
+        stimulus: 'Welcome to the experiment. <br /><br />This experiment will take about 20 minutes. Please complete all in one sitting. <br /><br />For this study, <strong>please use</strong> a laptop or desktop computer (not a mobile phone or tablet). Also, please use either <u>Chrome or Firefox</u>. <br /><br />Once you begin, <strong>DO NOT</strong> refresh the browser, as the experiment will reset and you will lose your progress. <br /><br />Press the <strong class="upperline">B</strong> key on your keyboard to begin.'
+    };
+    timeline.push(welcome);
+
+    // encoding instructions
+    var encoding_instructions = {
+        type: jsPsychInstructions,
+        pages: [
+            'In this task you will see visual illustrations of many different stories. <br />You should pay attention to all of the different elements, including the scene, person, and object in each story.',
+            'Below is an example story you may see: ' + '<br />' + '<img src="' + EXAMPLE_ENCODING + '"></img><br /><quote><center>Elastigirl went to the playground.<br />She brought her hat with her.<br />It was the only hat at the playground.</center></quote>',
+            'Please ensure you are in a quiet environment free from distractions, and click <strong>"Next >"</strong> when you are ready to begin.'
+        ],
+        show_clickable_nav: true,
+        allow_keys: false,
+        post_trial_gap: 2500,
+    };
+    // timeline.push(encoding_instructions);
+
+    // define fixation trial
+    var fixation = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<div style="font-size:60px;">+</div>',
+      choices: "NO_KEYS",
+      trial_duration: ISI,
+      data: {
+        task: 'fixation'
+      }
+    };
+
+    // define encoding trial
+    var encoding = {
+        type: jsPsychImageKeyboardResponse,
+        stimulus: jsPsych.timelineVariable('stimulus'),
+        choices: "NO_KEYS",
+        trial_duration: STUDY_TIME
+    };
+
+    // define attention check 
+    var attention_check = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: jsPsych.timelineVariable('attention_stim'),
+        choices: ATTENTION_CHOICES,
+        trial_duration: jsPsych.timelineVariable('attention_duration'),
+        data: {
+            task: 'response',
+            correct_response: jsPsych.timelineVariable('attention_choice')
+        },
+        on_finish: function(data) {
+            data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+        }
+    };
+    // define encoding procedure
+    var encoding_procedure = {
+        timeline: [fixation, encoding, attention_check],
+        timeline_variables: encoding_stim_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true
+    };
+    timeline.push(encoding_procedure);
+
+    // testing instructions
+    var testing_instructions = {
+        type: jsPsychInstructions,
+        pages: [
+            'You will now be tested on the stories you just viewed.',
+            'In the next phase of this task, you will see either one of the scenes, persons, or objects from the stories you previously viewed. <br />These cues will be placed on the left side of the screen.',
+            'On the right side of the screen, next to the cue, you will see a <strong style="color: red;">red</strong> box with four choices inside. <br />Please select which one of the four options belonged to the same story as the cue on the left side of the screen.',
+            'Below is an example of what you may see: ' + '<br />' + '<img src="' + EXAMPLE_TESTING + '"></img><br /><br /><ul><li>Click <strong class="upperline">' + AFC_CHOICES[0] + '</strong> on your keyboard to select the top-left item</li><li>Click <strong class="upperline">' + AFC_CHOICES[1] + '</strong> on your keyboard to select the top-right item</li><li>Click <strong class="upperline">' + AFC_CHOICES[2] + '</strong> on your keyboard to select the bottom-left item</li><li>Click <strong class="upperline">' + AFC_CHOICES[3] + '</strong> on your keyboard to select the bottom-right item</li></ul>',
+            'Do your best to remember which of the 4 items in the red box was part of the story indicated by the cue presented to the left of the red box. <br />You must provide an answer to move on to the next question. <br /><strong>Please provide your response to each question as quickly as you can.</strong>',
+            'Please orient your fingers to the following key positions on your keyboard to indicate your choices for each trial on the following task: ' + '<br />' + '<img src="' + EXAMPLE_KEYBOARD + '"></img>',
+            'If you are ready to continue, please click <strong>"Next >"</strong>.'
+        ],
+        show_clickable_nav: true,
+        allow_keys: false,
+        post_trial_gap: 2500,
+    };
+    // timeline.push(testing_instructions);
+
+    // define test trial
+    var test = {
+        type: jsPsychImageKeyboardResponse,
+        stimulus: jsPsych.timelineVariable('stimulus'),
+        choices: AFC_CHOICES,
+        data: {
+            task: 'response',
+            correct_response: jsPsych.timelineVariable('correct_response')
+        },
+        on_finish: function(data) {
+            data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+        }
+    };
+
+    // define testing procedure: Ab
+    var testing_procedure_Ab = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Ab_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // define testing procedure: Ac
+    var testing_procedure_Ac = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Ac_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // define testing procedure: Ba
+    var testing_procedure_Ba = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Ba_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // define testing procedure: Bc
+    var testing_procedure_Bc = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Bc_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // define testing procedure: Ca
+    var testing_procedure_Ca = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Ca_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // define testing procedure: Cb
+    var testing_procedure_Cb = {
+        timeline: [test],
+        timeline_variables: retrieval_stim_Cb_dict,
+        randomize_order: true,
+        stimulus_width: 1050,
+        maintain_aspect_ratio: true,
+        data: {
+            retrieval_group: jsPsych.timelineVariable('retrieval_group')
+        }
+    };
+
+    // randomize testing procedure block orders
+    var all_testing_blocks = [testing_procedure_Ab, testing_procedure_Ac, testing_procedure_Ba, testing_procedure_Bc, testing_procedure_Ca, testing_procedure_Cb];
+    var all_blocks_procedure = {
+        timeline: jsPsych.randomization.shuffle(all_testing_blocks)
+    };
+    // timeline.push(all_blocks_procedure);
+
+    // post experiment survey
+    var post_exp_survey = {
+        type: jsPsychSurveyText,
+        preamble: '<h2 style="text-align: left; color: #069;">Final Questions</h2>',
+        questions: [
+            {prompt: 'Did you use anything other than your own memory to complete this task? You will receive payment no matter how you response here.', rows: 4},
+            {prompt: 'Did you experience any technical issues while going through the task? If so, please try to describe in as much detail as necessary for us to look further into it.', rows: 4},
+            {prompt: 'Is there anything else you would like to share with us?', rows: 4}
+        ]
+    };
+    // timeline.push(post_exp_survey);
+
+    // demographics survey
+    var demographics_survey = {
+        type: jsPsychSurveyHtmlForm,
+        preamble: '<h2 style="text-align: left; color: #069;">Final Questions</h2>',
+        html: '<section class="dem-sec radioButtons"><h3 class="dem">Gender</h3><label><input name="Gender" type="radio" value="Male" required/>Male</label><label><input name="Gender" type="radio" value="Female" required/>Female</label><label><input name="Gender" type="radio" value="Other" required/>Other</label><label><input name="Gender" type="radio" value="PreferNotToAnswer" required/>Prefer Not To Answer</label></section>'+
+                '<section class="dem-sec"><label><h3 class="dem">Age</h3><input name="Age" class="wide collectorInput" type="text" pattern="[0-9][0-9]" value="" autocomplete="off" required/></label></section>'+
+                '<section class="dem-sec radioButtons"><h3 class="dem">Are you color blind?</h3><label><input name="ColorBlind" type="radio" value="Yes" required/>Yes</label><label><input name="ColorBlind" type="radio" value="No" required/>No</label></section>'+
+                '<section class="dem-sec"><label><h3 class="dem">Education</h3><select name="Education" class="wide collectorInput" required><option value="" default selected>Select Level</option><option>Some High School</option><option>High School Graduate</option><option>Some College, no degree</option><option>Associates degree</option><option>Bachelors degree</option><option>Graduate degree (Masters, Doctorate, etc.)</option></select></label></section>'+
+                '<section class="dem-sec"><label><h3 class="dem">What is your estimated household annual income?</h3><select name="Income" class="wide collectorInput" required><option value="" default selected>Select Level</option><option>$0-$24,999</option><option>$25,000-$49,999</option><option>$50,000-$74,999</option><option>$75,000-$99,999</option><option>$100,000-$124,999</option><option>$125,000-$149,999</option><option>$150,000+</option></select></label></section>'+
+                '<section class="dem-sec"><label><h3 class="dem">Race</h3><select name="Race" required class="wide collectorInput"><option value="" default selected>Select one</option><option>American Indian/Alaskan Native</option><option>Asian/Pacific Islander</option><option>Black</option><option>White</option><option>Other/unknown</option></select></label></section>'+
+                '<section class="dem-sec radioButtons"><h3 class="dem">Do you speak english fluently?</h3><label><input name="Fluent" type="radio" value="Yes" required/>Yes</label><label><input name="Fluent" type="radio" value="No" required/>No</label></section>'+
+                '<section class="dem-sec"><h3 class="dem">At what age did you start learning English?</h3><input name="AgeEnglish" type="text" value="" autocomplete="off" class="wide collectorInput"/><div class="small shim">If English is your first language please enter 0.</div></section>'+
+                '<section class="dem-sec"><label><h3 class="dem">What is your country of residence?</h3><input name="Country" type="text" value="" autocomplete="off" class="wide collectorInput"/></label></section>'
+    };
+    // timeline.push(demographics_survey);
+
+    // exit full screen mode
+    var exit_fullscreen = {
+        type: jsPsychFullscreen,
+        fullscreen_mode: false,
+        delay_after: 0
+    };
+    timeline.push(exit_fullscreen);
+
+    // execute experiment
+    jsPsych.run(timeline);
+
+  </script>
+</html>

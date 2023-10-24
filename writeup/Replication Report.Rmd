@@ -109,7 +109,7 @@ Any differences from what was described as the original plan, or "none".
 
 Data preparation following the analysis plan.
 
-```{r include=F}
+```
 ### Data Preparation
 
 #### Load Relevant Libraries and Functions
@@ -118,24 +118,24 @@ library(tidyverse)
 
 #### Import data
 
-data <- read_csv("participant_data.csv")
+#data <- read_csv("participant_data.csv")
 
 #### Data exclusion / filtering
 
-filtered_data <- data %>%
-  filter(accuracy < 1, fullscreen == 0, key_press_correct == 1)
+#filtered_data <- data %>%
+  #filter(accuracy < 1, fullscreen == 0, key_press_correct == 1)
 
 #### Prepare data for analysis - create columns etc.
 
-data <- data %>% mutate(new_column = ifelse(condition, value_if_true, value_if_false))
+#data <- data %>% mutate(new_column = ifelse(condition, #value_if_true, value_if_false))
 
 # AB and AC refer to specific pairwise associations within an event. For example, A could represent a person and B could represent an object. Thus, AB would represent the association between the person and object. 
 
-data <- data %>%
-   mutate(ABAC_correct = ifelse(AB == 1 & AC == 1, 1, 0),
-          ABAC_incorrect = ifelse(AB == 0 & AC == 0, 1, 0),
-          AB_correct_AC_incorrect = ifelse(AB == 1 & AC == 0, 1, 0),
-          AC_correct_AB_incorrect = ifelse(AB == 0 & AC == 1, 1, 0))
+#data <- data %>%
+   #mutate(ABAC_correct = ifelse(AB == 1 & AC == 1, 1, 0),
+          #ABAC_incorrect = ifelse(AB == 0 & AC == 0, 1, 0),
+          #AB_correct_AC_incorrect = ifelse(AB == 1 & AC == 0, 1, 0),
+          #AC_correct_AB_incorrect = ifelse(AB == 0 & AC == 1, 1, 0))
 
 
 ```
