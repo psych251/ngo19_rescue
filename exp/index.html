@@ -1,6 +1,8 @@
 <!-- 
-    Shawn T. Schwartz, 2021 updated by Sarah Tung, 2023 
+    Shawn T. Schwartz, 2021
     <stschwartz@stanford.edu> 
+        updated by Sarah Tung, 2023
+        <sstung@stanford.edu>
 -->
 <!DOCTYPE html>
 <html>
@@ -127,7 +129,7 @@
         encoding_stim_arr.push("img/encoding_events/Event_" + i + ".jpg");
         encoding_stim_dict.push({
             stimulus: "img/encoding_events/Event_" + i + ".jpg",
-            attention_stim: "Please press the <strong><u>" + attention_key + "</u></strong> key",
+            attention_stim: "Please press the <strong><u>" + attention_key + "</u></strong> key to continue",
             attention_choice: attention_key,
             attention_duration: attention_duration
         })
@@ -378,7 +380,7 @@
         allow_keys: false,
         post_trial_gap: 2500,
     };
-    // timeline.push(encoding_instructions);
+    timeline.push(encoding_instructions);
 
     // define fixation trial
     var fixation = {
@@ -439,7 +441,7 @@
         allow_keys: false,
         post_trial_gap: 2500,
     };
-    // timeline.push(testing_instructions);
+    timeline.push(testing_instructions);
 
     // define test trial
     var test = {
@@ -532,7 +534,7 @@
     var all_blocks_procedure = {
         timeline: jsPsych.randomization.shuffle(all_testing_blocks)
     };
-    // timeline.push(all_blocks_procedure);
+    timeline.push(all_blocks_procedure);
 
     // post experiment survey
     var post_exp_survey = {
@@ -544,7 +546,7 @@
             {prompt: 'Is there anything else you would like to share with us?', rows: 4}
         ]
     };
-    // timeline.push(post_exp_survey);
+    timeline.push(post_exp_survey);
 
     // demographics survey
     var demographics_survey = {
@@ -560,7 +562,7 @@
                 '<section class="dem-sec"><h3 class="dem">At what age did you start learning English?</h3><input name="AgeEnglish" type="text" value="" autocomplete="off" class="wide collectorInput"/><div class="small shim">If English is your first language please enter 0.</div></section>'+
                 '<section class="dem-sec"><label><h3 class="dem">What is your country of residence?</h3><input name="Country" type="text" value="" autocomplete="off" class="wide collectorInput"/></label></section>'
     };
-    // timeline.push(demographics_survey);
+    timeline.push(demographics_survey);
 
     // exit full screen mode
     var exit_fullscreen = {
