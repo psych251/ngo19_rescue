@@ -23,13 +23,15 @@ Project repository: https://github.com/psych251/ngo19_rescue
 
 Original paper: https://github.com/psych251/ngo19_rescue/blob/main/original_paper/ngo-et-al-2019-development-of-holistic-episodic-recollection.pdf
 
+Experimental Paradigm: http://173.236.204.40/st/ngo19rep/index.html?PROLIFIC_PID=TA_demo&STUDY_ID=1&SESSION_ID=TA1
+
 ## Summary of prior replication attempt
 
 In comparing the methodologies between the original study and the 1st replication, I noticed 3 main differences. First, the original study had a larger participant pool of 31 individuals, whereas the replication was conducted with a notably smaller group of just 12 participants. This decision in the replication was influenced by effect size considerations: while the original study reported an effect size of 1.32, the replication aimed for an effect size of 0.8. This reduction in the targeted effect size may have implications for the study's power and sensitivity. Additionally, the testing environments differed between the original study and the 1st replication. In the original, participants used a 13-inch laptop screen in a controlled setting. In the replication, participants did the experiment remotely on their own laptop or desktop. This means the replication couldn't control for screen size, resolution, or potential distractions in participants' environments.
 
 ## Methods
 
-### Power Analysis - will do in class this week 
+### Power Analysis - will do in class this week
 
 Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
 
@@ -47,13 +49,13 @@ I plan to have a sample size of N = 31.
 
 I will precisely follow the methods quoted directly from the original study in my experiment.
 
-"We sampled 24 cartoon images of distinct scenes (12 indoor scenes, e.g., an aquarium; 12 outdoor scenes, e.g., a playground), 24 cartoon images of com- mon objects (e.g., a watch), and 24 images of cartoon characters from nonoverlapping movies or books (12 males, e.g., Pinocchio; 12 females, e.g., Alice) from the Google Images search engine. From this pool of selected images, we then constructed 24 "events," each consist- ing of a scene (e.g., an aquarium), a person (e.g., Alice), and an object (e.g., a wallet). The event assignment of the elements was randomized, with the exception that items with preexperimental associations (e.g., books and library) were not assigned to the same event. Every possible cue--test combination of each event was tested, resulting in six test trials per event (1 = cue: scene, test: person; 2 = cue: scene, test: object; 3 = cue: person, test: scene; 4 = cue: person, test: object; 5 = cue: object, test: scene; 6 = cue: object, test: person) and totaling 144 test trials."
+"We sampled 24 cartoon images of distinct scenes (12 indoor scenes, e.g., an aquarium; 12 outdoor scenes, e.g., a playground), 24 cartoon images of com- mon objects (e.g., a watch), and 24 images of cartoon characters from nonoverlapping movies or books (12 males, e.g., Pinocchio; 12 females, e.g., Alice) from the Google Images search engine. From this pool of selected images, we then constructed 24"events," each consist- ing of a scene (e.g., an aquarium), a person (e.g., Alice), and an object (e.g., a wallet). The event assignment of the elements was randomized, with the exception that items with preexperimental associations (e.g., books and library) were not assigned to the same event. Every possible cue--test combination of each event was tested, resulting in six test trials per event (1 = cue: scene, test: person; 2 = cue: scene, test: object; 3 = cue: person, test: scene; 4 = cue: person, test: object; 5 = cue: object, test: scene; 6 = cue: object, test: person) and totaling 144 test trials."
 
 **Procedure**
 
 In my experiment, I will adhere closely to the methods directly quoted from the original study. While the original study was conducted in-person on a 13-inch laptop screen---likely aiding in attention control and minimizing external distractions---I will ensure participants use only a laptop or desktop. Additionally, the experiment will automatically launch in fullscreen mode and notify me if a participant exits this mode.
 
-"All participants were tested individually. The task procedure administered to children consisted of two encoding-test blocks, which occurred immediately after one another. Each block consisted of 12 encoding and 72 test trials, all presented on a 13-in. laptop screen. Prior to encoding, participants were told that they would see many different stories and that they should pay close attention to all of the different elements, including the scene, person, and object in each story. Then, participants viewed a series of events (12 s each; 0.5 s intertrial interval). A short audio-recorded narrative accompanied each event (e.g., \"Alice went to the aquarium, but she dropped her wallet there; the wallet was lost in the aquarium\"; see [Fig. 1a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/)). Each narrative consisted of three sentences, with each sentence highlighting one pairwise association within the event. The order of the pairwise associations within each narrative was not fixed or counterbalanced across the events. The narrative was constructed this way to engage children in the task and to increase the likelihood that children would pay attention to all of the elements in an event. Prior to encoding, we provided one example (a playground, Elastigirl, a hat) in order to acquaint the participants with the encoding task.
+"All participants were tested individually. The task procedure administered to children consisted of two encoding-test blocks, which occurred immediately after one another. Each block consisted of 12 encoding and 72 test trials, all presented on a 13-in. laptop screen. Prior to encoding, participants were told that they would see many different stories and that they should pay close attention to all of the different elements, including the scene, person, and object in each story. Then, participants viewed a series of events (12 s each; 0.5 s intertrial interval). A short audio-recorded narrative accompanied each event (e.g.,"Alice went to the aquarium, but she dropped her wallet there; the wallet was lost in the aquarium"; see [Fig. 1a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/)). Each narrative consisted of three sentences, with each sentence highlighting one pairwise association within the event. The order of the pairwise associations within each narrative was not fixed or counterbalanced across the events. The narrative was constructed this way to engage children in the task and to increase the likelihood that children would pay attention to all of the elements in an event. Prior to encoding, we provided one example (a playground, Elastigirl, a hat) in order to acquaint the participants with the encoding task.
 
 Immediately after the encoding phase of each block, participants performed a self-paced four-alternative forced-choice task. We tested participants on every possible cue--retrieval combination of each studied event, resulting in 6 test trials per event, which totaled 72 test trials per block. On each trial, a cue and four options were presented simultaneously on the screen (see [Fig. 2a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig2-0956797619879441/)). Among four options, one was a target---the correct item because it belonged to the same event as the cue. The three lures were same-category elements from different events. The lures always came from the events that contained same-sex characters, so that participants could not eliminate lures on the basis of general mnemonic heuristics (e.g., remembering that there was a female character who went to the aquarium). Across all 24 events, any two test trials that had overlapping cue items (e.g., A~B~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^ and A~C~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^) or in which tested items (e.g., B~A~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^ and C~A~^[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/#fn1-0956797619879441)^) shared only one foil item (out of three) with respect to their event membership. For example, for the A~B~ test trial of Event 1, the foils included the B elements from Events 2, 3, and 4, whereas for the A~C~ trial of Event 1, the foils included the C elements from Events 3, 5, and 7 (one B and one C foil, both from Event 3). Furthermore, all items served as foils an equal number of times across all 144 test trials. Children were asked to point to one of the four options that belonged to the same story as the cue on the left side of the screen. Positions of the correct answer were counterbalanced across the entire test phase. There were no missing responses, as the response time was unrestricted. The memory task took approximately 40 min.
 
@@ -105,48 +107,382 @@ Any differences from what was described as the original plan, or "none".
 
 ## Results
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 ### Data preparation
 
-Data preparation following the analysis plan.
+```{r}
+## Load Relevant Libraries and Functions
+library(tidyverse)
+library(BayesFactor)
+
+## Import data
+### get all data files from directory
+data_files <- list.files(file.path("~/Desktop/ngo19_rescue/exp/data"), pattern = "*.csv", full.names = TRUE)
+data_files
+
+### read individual data files to list
+all_data <- lapply(data_files, read.csv)
+
+### unpack list as singular tidy data frame
+all_data <- all_data |>
+  map_df(as_tibble)
+
+if(!221 %in% all_data$trial_index) {
+  print("Trial index 221 is missing after import.")
+} else {
+  print("Trial index 221 is present after import.")
+}
+```
+
+```{r}
+### unpack participant demographics
+demographics_trials <- all_data |>
+  subset(trial_type == "survey-html-form")
+
+### string together json strings
+json_text <- paste0(demographics_trials$response, collapse = ',')
+json_text <- paste0('[', json_text, ']')
+
+### unpack json as data frame
+demographics_trials <- jsonlite::fromJSON(json_text) |>
+  as_tibble() |>
+  mutate(subject_id = rownames(demographics_trials), .before = "Gender")
+
+### get participant demographic stats
+#### age
+mean_age <- mean(as.numeric(demographics_trials$Age))
+sd_age <- sd(as.numeric(demographics_trials$Age))
+min_age <- min(as.numeric(demographics_trials$Age))
+max_age <- max(as.numeric(demographics_trials$Age))
+
+#### gender
+table(demographics_trials$Gender)
+```
+
+```{r}
+## Data exclusion / filtering
+### clean data into long format
+
+all_data_cleaned <- all_data |>
+  group_by(subject_id) |> 
+  #filter(row_number() > 78 & row_number() <= 221) |> 
+  #slice(78:221) |>
+  filter(trial_index >= 78 & trial_index <= 221) |>
+  ungroup() |>
+  filter(!is.na(correct))
+
+if(!221 %in% all_data_cleaned$trial_index) {
+  print("Trial index 221 is missing")
+} else {
+  print("Trial index 221 is present")
+}
 
 ```
-### Data Preparation
 
-#### Load Relevant Libraries and Functions
+```{r}
 
-library(tidyverse)
+print("Data after filtering:")
+print(head(all_data_cleaned))
 
-#### Import data
 
-#data <- read_csv("participant_data.csv")
 
-#### Data exclusion / filtering
+# Group the cleaned data by subject_id, then count the number of rows for each group
+participant_row_counts <- all_data_cleaned |>
+  group_by(subject_id) |>
+  summarise(num_rows = n())
 
-#filtered_data <- data %>%
-  #filter(accuracy < 1, fullscreen == 0, key_press_correct == 1)
 
-#### Prepare data for analysis - create columns etc.
+# Print the row counts to see the number of rows for each participant
+print(participant_row_counts)
 
-#data <- data %>% mutate(new_column = ifelse(condition, #value_if_true, value_if_false))
+all_data_cleaned <- all_data_cleaned |>
+  mutate(accuracy = ifelse(correct == "true", 1, 0)) |>
+  select(subject_id, trial_index, time_elapsed, rt, stimulus, task,
+         retrieval_group, response, correct_response, correct, accuracy) |>
+  separate(stimulus, c(NA, NA, NA, NA, "id"), sep = "_", remove = FALSE, extra = "merge", fill = "right")
 
-# AB and AC refer to specific pairwise associations within an event. For example, A could represent a person and B could represent an object. Thus, AB would represent the association between the person and object. 
+if(!221 %in% all_data_cleaned$trial_index) {
+  print("Trial index 221 is missing")
+} else {
+  print("Trial index 221 is present")
+}
 
-#data <- data %>%
-   #mutate(ABAC_correct = ifelse(AB == 1 & AC == 1, 1, 0),
-          #ABAC_incorrect = ifelse(AB == 0 & AC == 0, 1, 0),
-          #AB_correct_AC_incorrect = ifelse(AB == 1 & AC == 0, 1, 0),
-          #AC_correct_AB_incorrect = ifelse(AB == 0 & AC == 1, 1, 0))
 
+```
+
+```{r}
+# Calculate accuracy summaries
+accuracy_summary <- all_data_cleaned |>
+  filter(task == "response") |> 
+  group_by(retrieval_group) |>
+  summarise(mean = mean(accuracy), sd = sd(accuracy), n = n(), sem = sd/sqrt(n))
+
+print(accuracy_summary)
+
+
+```
+
+```{r}
+## Prepare data for analysis - create columns 
+### compute individual accuracy by grouping
+accuracy_summary <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  group_by(retrieval_group) |>
+  summarise(mean = mean(accuracy), sd = sd(accuracy), n = n(), sem = sd/sqrt(n))
+
+```
+
+```{r}
+### compute accuracy by participant
+accuracy_summary_part <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy), sd = sd(accuracy), n = n(), sem = sd/sqrt(n))
+
+### compute overall accuracy
+overall_accuracy_summary <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  summarise(mean = mean(accuracy), sd = sd(accuracy), n = n(), sem = sd/sqrt(n))
+
+
+### compute Ab_Ac_Accuracy
+Ab_Ac_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ab" | retrieval_group == "Ac") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+
+### compute Ba_Bc_Accuracy
+Ba_Bc_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ba" | retrieval_group == "Bc") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+### compute Ca_Cb_Accuracy
+Ca_Cb_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ca" | retrieval_group == "Cb") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+### compute Ba_Ca_Accuracy
+Ba_Ca_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ba" | retrieval_group == "Ca") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+### compute Ac_Bc_Accuracy
+Ac_Bc_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ac" | retrieval_group == "Bc") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+### compute Ab_Cb_Accuracy
+Ab_Cb_Accuracy <- all_data_cleaned |>
+  filter(task == "response") |> # only use retrieval data
+  filter(retrieval_group == "Ab" | retrieval_group == "Cb") |>
+  group_by(subject_id) |>
+  summarise(mean = mean(accuracy))
+
+### compute 6 2x2 contingency tables for retrieval dependency key analysis
+
+#### define dependent model function
+compute_data_model <- function(group_one, group_two, num_events = 24) {
+  test_set <- all_data_cleaned |>
+    filter(task == "response") |> # only use retrieval data
+    select(subject_id, id, retrieval_group, accuracy) |> # select only the necessary columns
+    filter(retrieval_group == group_one | retrieval_group == group_two) |> # filter out relevant groups from function params
+    pivot_wider(id_cols = c(subject_id, id), names_from = retrieval_group, values_from = accuracy) |> # make long data frame wide for data dependent calculations
+    rowwise() |>
+    mutate(sum = sum(eval(parse(text = group_one)) + eval(parse(text = group_two)))) # get sums to compute all_correct and all_incorrect proportion of contingency table
+  
+
+  # get unique participants
+  ps <- unique(all_data_cleaned$subject_id)
+  data_models <- rep(NA, length(ps))
+  
+  for(ii in 1:length(ps)) {
+    # get data for just the one participant in the loop
+    data_subset <- test_set |>
+      filter(subject_id == ps[ii])
+    
+    # get proportion of all correct
+    prop_all_correct <- sum(data_subset$sum == 2) / num_events
+    
+    # get proportion of all incorrect
+    prop_all_incorrect <- sum(data_subset$sum == 0) / num_events
+    
+    # compute data model and store per participant
+    data_model_calc <- prop_all_correct + prop_all_incorrect
+    data_models[ii] <- data_model_calc 
+  }
+  
+  return(data_models)
+}
+
+#### 1) compute Data_Ab_Ac
+Data_Ab_Ac <- compute_data_model("Ab", "Ac")
+
+#### 2) compute Data_Ba_Bc
+Data_Ba_Bc <- compute_data_model("Ba", "Bc")
+
+#### 3) compute Data_Ca_Cb
+Data_Ca_Cb <- compute_data_model("Ca", "Cb")
+
+#### 4) compute Data_Ba_Ca
+Data_Ba_Ca <- compute_data_model("Ba", "Ca")
+
+#### 5) compute Data_Ac_Bc
+Data_Ac_Bc <- compute_data_model("Ac", "Bc")
+
+#### 6) compute Data_Ab_Cb
+Data_Ab_Cb <- compute_data_model("Ab", "Cb")
+
+#### define independent model function
+compute_ind_model <- function(group_one, group_two) {
+  P_AB <- all_data_cleaned |>
+    filter(retrieval_group == group_one) |>
+    group_by(subject_id) |>
+    summarise(mean = mean(accuracy))
+
+  P_AC <- all_data_cleaned |>
+    filter(retrieval_group == group_two) |>
+    group_by(subject_id) |>
+    summarise(mean = mean(accuracy))
+
+  cor_cor <- P_AB$mean * P_AC$mean
+  incor_cor <- P_AC$mean * (1 - P_AB$mean)
+  cor_incor <- P_AB$mean * (1 - P_AC$mean)
+  incor_incor <- (1 - P_AB$mean) * (1 - P_AC$mean)
+
+  return(cor_cor + incor_incor)
+}
+
+#### 1) compute Independent_Model_Ab_Ac
+Independent_Model_Ab_Ac <- compute_ind_model("Ab", "Ac")
+
+#### 2) compute Independent_Model_Ba_Bc
+Independent_Model_Ba_Bc <- compute_ind_model("Ba", "Bc")
+
+#### 3) compute Independent_Model_Ca_Cb
+Independent_Model_Ca_Cb <- compute_ind_model("Ca", "Cb")
+
+#### 4) compute Independent_Model_Ba_Ca
+Independent_Model_Ba_Ca <- compute_ind_model("Ba", "Ca")
+
+#### 5) compute Independent_Model_Ac_Bc
+Independent_Model_Ac_Bc <- compute_ind_model("Ac", "Bc")
+
+#### 6) compute Independent_Model_Ab_Cb
+Independent_Model_Ab_Cb <- compute_ind_model("Ab", "Cb")
+
+#### 1) compute Dependency_AbAc
+Dependency_AbAc <- Data_Ab_Ac - Independent_Model_Ab_Ac
+
+#### 2) compute Dependency_BaBc
+Dependency_BaBc <- Data_Ba_Bc - Independent_Model_Ba_Bc
+  
+#### 3) compute Dependency_CaCb
+Dependency_CaCb <- Data_Ca_Cb - Independent_Model_Ca_Cb
+  
+#### 4) compute Dependency_BaCa
+Dependency_BaCa <- Data_Ba_Ca - Independent_Model_Ba_Ca
+
+#### 5) compute Dependency_AcBc
+Dependency_AcBc <- Data_Ac_Bc - Independent_Model_Ac_Bc
+  
+#### 6) compute Dependency_AbCb
+Dependency_AbCb <- Data_Ab_Cb - Independent_Model_Ab_Cb
+
+### compute Collapsed_Data
+total_data_model <- (Data_Ab_Ac + Data_Ba_Bc + Data_Ca_Cb + Data_Ba_Ca + Data_Ac_Bc + Data_Ab_Cb) / 6
+
+### compute Collapsed_Ind_Model
+total_ind_model <- (Independent_Model_Ab_Ac + Independent_Model_Ba_Bc + Independent_Model_Ca_Cb + Independent_Model_Ba_Ca + Independent_Model_Ac_Bc + Independent_Model_Ab_Cb) / 6
+
+### compute Dependency
+Dependency <- total_data_model - total_ind_model
+Dependency
+
+Dependency_avg <- mean(Dependency)
+Dependency_avg
+
+## construct complete data frame with all relevant stats summarized for each participant
+summary_data <- data.frame(subject_id = accuracy_summary_part$subject_id,
+                           Accuracy_mean = accuracy_summary_part$mean,
+                           Accuracy_sd = accuracy_summary_part$sd,
+                           Accuracy_sem = accuracy_summary_part$sem,
+                           Accuracy_n = accuracy_summary_part$n,
+                           Accuracy_AbAc = Ab_Ac_Accuracy$mean,
+                           Accuracy_BaBc = Ba_Bc_Accuracy$mean,
+                           Accuracy_CaCb = Ca_Cb_Accuracy$mean,
+                           Accuracy_BaCa = Ba_Ca_Accuracy$mean,
+                           Accuracy_AcBc = Ac_Bc_Accuracy$mean,
+                           Accuracy_AbCb = Ab_Cb_Accuracy$mean,
+                           Data_AbAc = Data_Ab_Ac,
+                           Data_BaBc = Data_Ba_Bc,
+                           Data_CaCb = Data_Ca_Cb,
+                           Data_BaCa = Data_Ba_Ca,
+                           Data_AcBc = Data_Ac_Bc,
+                           Data_AbCb = Data_Ab_Cb,
+                           Independent_AbAc = Independent_Model_Ab_Ac,
+                           Independent_BaBc = Independent_Model_Ba_Bc,
+                           Independent_CaCb = Independent_Model_Ca_Cb,
+                           Independent_BaCa = Independent_Model_Ba_Ca,
+                           Independent_AcBc = Independent_Model_Ac_Bc,
+                           Independent_AbCb = Independent_Model_Ab_Cb,
+                           Dependency_AbAc = Dependency_AbAc,
+                           Dependency_BaBc = Dependency_BaBc,
+                           Dependency_CaCb = Dependency_CaCb,
+                           Dependency_BaCa = Dependency_BaCa,
+                           Dependency_AcBc = Dependency_AcBc,
+                           Dependency_AbCb = Dependency_AbCb,
+                           Data_model_overall = total_data_model,
+                           Independent_model_overall = total_ind_model,
+                           Dependency_overall = Dependency)
+
+DT::datatable(summary_data)
+
+
+## count number of participants to exclude for having overall task accuracy == 100%
+perfect_acc_exclusions_idx <- which(summary_data$Accuracy_mean == 1)
+if(length(perfect_acc_exclusions_idx) > 0) {
+  summary_data_w_exclusions <- summary_data[perfect_acc_exclusions_idx,]
+} else {
+  print("No exclusions based on accuracy made!")
+}
+num_acc_exclusions <- length(perfect_acc_exclusions_idx)
+num_acc_exclusions
+print("Final dataset check before exclusions:")
+print(head(all_data_cleaned))
+```
+
+### Confirmatory Analysis
+
+```{r}
+if(any(is.na(Dependency)) | any(is.nan(Dependency))) {
+  print("Dependency contains NA or NaN values, which are not valid for t-test.")
+} else {
+### testing key confirmatory analysis
+key_test <- t.test(Dependency, alternative = "greater", mu = 0)
+print(key_test)
+
+### get bayes factor for key confirmatory analysis t-test
+key_test_bf <- ttestBF(Dependency, mu = 0, nullInterval = c(0, Inf))
+print(key_test_bf)
+print(1/key_test_bf) ## BF in support of the null
+}
 
 ```
 
 ### Results of control measures
-
-How did people perform on any quality control checks or positive and negative controls?
-
-### Confirmatory analysis
-
-The analyses as specified in the analysis plan.
 
 *Three-panel graph with original, 1st replication, and your replication is ideal here*
 
