@@ -119,16 +119,25 @@
     var num_events = 24;
     var encoding_stim_arr = [];
     var encoding_stim_dict = [];
+    var encoding_stim_orders = [];
+
+    for (i = 1; i <= num_events; i++) {
+        encoding_stim_orders.push(i);
+    }
+
+    var shuffled_encoding_stim_orders = encoding_stim_orders.sort((a, b) => 0.5 - Math.random());
+    console.log(shuffled_encoding_stim_orders);
+
     for(var i = 1; i <= num_events; i++) {
-        if(i % 12 == 0) {
+        if(i % 4 == 0) {
             attention_duration = STUDY_TIME
         } else {
             attention_duration = 0
         }
         attention_key = ATTENTION_CHOICES[Math.floor(Math.random() * ATTENTION_CHOICES.length)];
-        encoding_stim_arr.push("img/encoding_events/Event_" + i + ".jpg");
+        encoding_stim_arr.push("img/encoding_events/Event_" + shuffled_encoding_stim_orders[i-1] + ".jpg");
         encoding_stim_dict.push({
-            stimulus: "img/encoding_events/Event_" + i + ".jpg",
+            stimulus: "img/encoding_events/Event_" + shuffled_encoding_stim_orders[i-1] + ".jpg",
             attention_stim: "Please press the <strong><u>" + attention_key + "</u></strong> key to continue",
             attention_choice: attention_key,
             attention_duration: attention_duration
@@ -420,7 +429,8 @@
     var encoding_procedure = {
         timeline: [fixation, encoding, attention_check],
         timeline_variables: encoding_stim_dict,
-        randomize_order: true,
+        // randomize_order: true,
+        randomize_order: false,
         stimulus_width: 1050,
         maintain_aspect_ratio: true
     };
