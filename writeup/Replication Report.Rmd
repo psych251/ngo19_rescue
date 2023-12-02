@@ -23,7 +23,7 @@ Project repository: https://github.com/psych251/ngo19_rescue
 
 Original paper: https://github.com/psych251/ngo19_rescue/blob/main/original_paper/ngo-et-al-2019-development-of-holistic-episodic-recollection.pdf
 
-Experimental Paradigm: http://173.236.204.40/st/ngo19rep/index.html?PROLIFIC_PID=TA_demo&STUDY_ID=1&SESSION_ID=TA1
+Experimental Paradigm: http://173.236.204.40/st/ngo19rep/index.html?PROLIFIC_PID=progress3_demo&STUDY_ID=1&SESSION_ID=progress3
 
 ## Summary of prior replication attempt
 
@@ -31,19 +31,17 @@ In comparing the methodologies between the original study and the 1st replicatio
 
 ## Methods
 
-### Power Analysis - will do in class this week
+### Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
+Original effect size was d = 1.32. Replication effect size was d = 0.15.
 
-How much power does your planned sample have for original effect? For an attenuated effect that is half the size of the original?
+From G\*Power Analysis for samples to achieve: 80%: N = 6 90%: N = 7 95% power: N = 8
 
-(If power analysis is not possible or precise, discuss more fully how you determined a sample size that would be sufficient for rescue.)
+Considerations of feasibility for selecting planned sample size. - sample size should be bigger than N = 8. Replication had N = 11 participants but only got effect size of d = 0.15. When I put this effect size into G\*Power, I need a sample size of N = 277 to get 80% power. However, this is not feasible, budget-wise, so I will be using the Small Telescopes method (Simonsohn, 2014) and doing 2.5 times the original sample size. 
 
 ### Planned Sample
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
-
-I plan to have a sample size of N = 31.
+I planned to have a sample size of at least N = 31 but with considerations to the power analysis above and the small telescopes method. I will collect 77 participants, since that is 2.5 times the original sample size. In Prolific, I will set the following parameters: participants must be located in the USA, aged 18-31 years old, have English as their first language, and possess normal or corrected vision, with no issues of color blindness; additionally, I will ensure a balanced sample of males and females.
 
 ### Materials
 
@@ -75,7 +73,7 @@ A schematic depiction of the task design and the 2 × 2 contingency table used t
 
 ### Controls
 
-To confirm that participants are actively engaged and attentive throughout the experiment, I will introduce key press attention checks every 12 trials, resulting in a total of 12 attention checks across the 144 trials. For these checks, participants will be prompted with instructions like, "Please press the \[chosen key\] key to continue." The chosen keys for these checks will be diverse, including "j", "k", "f", "d", "s", and "a", to prevent any rote memorization or autopilot responses. These attention checks will help filter out participants who might not be genuinely engaged in the task, ensuring that our data reflects genuine cognitive responses.
+To confirm that participants are actively engaged and attentive throughout the experiment, I will introduce key press attention checks every 4 trials. For these checks, participants will be prompted with instructions like, "Please press the \[chosen key\] key to continue." The chosen keys for these checks will be diverse, including "j", "k", "f", "d", "s", and "a", to prevent any rote memorization or autopilot responses. These attention checks will help filter out participants who might not be genuinely engaged in the task, ensuring that our data reflects genuine cognitive responses.
 
 To further validate the task's functionality and participants' comprehension of the instructions, I am considering the incorporation of a positive control. This would consist of a set of trials where, based on the contextual similarity of the stimuli, we anticipate almost all participants to answer correctly. These contextually congruent trials are designed on the hypothesis that when stimuli are more related or familiar in context, participants are more likely to respond accurately. However, this is based on my own speculation, so I'm not sure if I should add this.
 
@@ -85,13 +83,15 @@ I will conduct the following analysis precisely as directly quoted below with th
 
 "The primary questions of this research were whether holistic recollection is evident at the ages of 4 and 6 years, during a crucial developmental window of robust gains in episodic memory, and whether holistic recollection changes with age. To answer the first question, **we conducted a one-sample *t* test** to determine whether dependency (data -- independent model) exceeded zero for each age group."
 
+**To clarify the key test I will be running in my own words, I will conduct a one-sample t-test to determine if the mean dependency (difference between data and independent model) in my study significantly exceeds zero, which would indicate holistic recollection. I will be testing the 'Dependency' variable computed from the proportions of joint retrieval for different item pairs.**
+
 I also suspect that individual trials with contextually similar stimuli lead to better performance than trials with non-contextually similar stimuli so **I plan to run a follow-up paired-samples t-test**. I will label which trials are contextually similar and which are not, compute the performance measure (e.g., accuracy, response time) for each trial type (contextually similar vs. non-contextually similar), and use a paired-samples t-test to compare the mean performance across the two types of trials.
 
 ### Differences from Original Study and 1st replication
 
 The original study was conducted with 31 participants in a controlled, in-person setting using a 13-inch laptop. In contrast, the first replication used a smaller sample size of 12 participants and was administered remotely via Prolific, allowing participants to use any size of laptop or desktop. Both studies followed the same analysis plan.
 
-For the second replication, I aim to collect data from 31 participants, mirroring the original study's sample size. This step is to determine if the discrepancies in the first replication arose due to a power issue. If, even with the larger sample, the results still fail to align with the original study, I'll use a paired samples t-test, which was not used in either the original or first replication. The goal is to probe if the variance emerged from the contextual similarity of the stimuli pairs. If a significant association is identified between contextual stimuli and accuracy, I plan to rerun the study, excluding those particular contextual pairs.
+For the second replication, I aim to collect data from 77 participants, mirroring the original study's sample size. This step is to determine if the discrepancies in the first replication arose due to a power issue. If, even with the larger sample, the results still fail to align with the original study, I'll use a paired samples t-test, which was not used in either the original or first replication. The goal is to probe if the variance emerged from the contextual similarity of the stimuli pairs. If a significant association is identified between contextual stimuli and accuracy, I plan to rerun the study, excluding those particular contextual pairs.
 
 ### Methods Addendum (Post Data Collection)
 
@@ -482,13 +482,109 @@ print(1/key_test_bf) ## BF in support of the null
 
 ```
 
+#### Overall Accuracy
+
+```{r}
+## compute 95% CI of acc mean assuming normal distribution
+acc_mean <- mean(summary_data$Accuracy_mean)
+acc_sd <- sd(summary_data$Accuracy_mean)
+n <- 12
+error <- qnorm(0.975)*acc_sd/sqrt(n)
+lower_ci <- acc_mean - error
+upper_ci <- acc_mean + error
+```
+
+#### Proportion of Joint Retrieval
+
+#### Original vs. Replication Attempt
+
+```{r}
+### Overall Accuracy
+#### make plot
+acc_plot <- ggplot(summary_data, aes(x = "", y = Accuracy_mean)) +
+  geom_boxplot(width = 0.15, fill = "#ad93ad", outlier.shape = NA) +
+  geom_jitter(width = 0, col = "#5c475b", fill = "#FFFFFF", alpha = .7, shape = 21, size = 1, stroke = 1) +
+  xlab(" ") +
+  ylab("Overall Accuracy") +
+  scale_y_continuous(breaks = seq(0.25, 1.00, 0.25), limits = c(0.25, 1.00)) +
+  theme_classic() +
+  theme(panel.grid = element_blank(),
+        panel.border = element_blank(),
+        legend.title = element_blank(),
+        legend.text = element_text(color = "grey20", size = 12),
+        axis.text.x = element_text(color = "grey20", size = 16),
+        axis.text.y = element_text(color = "grey20", size = 16),  
+        axis.title.x = element_text(color = "grey20", size = 16, face = "bold"),
+        axis.title.y = element_text(color = "grey20", size = 16, vjust = 0.5, face = "bold"))
+
+
+### Proportion of Joint Retrieval
+#### get relevant data in long format
+summary_data_joint_ret_long <- pivot_longer(summary_data,
+                                            c(Data_model_overall, Independent_model_overall),
+                                            names_to = "source",
+                                            values_to = "prop_joint_retrieval") |>
+  rowwise() |>
+  mutate(source_cleaned = ifelse(source == "Data_model_overall", "Data", "Ind. Model")) |>
+  select(subject_id, source, source_cleaned, prop_joint_retrieval)
+
+#### make plot
+ret_plot <- ggplot(summary_data_joint_ret_long, aes(x = source_cleaned, y = prop_joint_retrieval, fill = source_cleaned)) +
+  geom_boxplot(width = 0.15, outlier.shape = NA, position = position_dodge(1)) +
+  geom_jitter(aes(col = source_cleaned, x = source_cleaned), position = position_jitter(width = 0), alpha = .7, shape = 21, size = 1, stroke = 1) +
+  xlab("Young Adults") +
+  ylab("Proportion of\nJoint Retrieval") +
+  scale_y_continuous(breaks = seq(0.40, 1.00, 0.1), limits = c(0.40, 1.00)) +
+  scale_fill_manual(values = c("#ad93ad", "#dbb5d6")) +
+  scale_color_manual(values = c("#5c475b", "#573350")) +
+  theme_classic() +
+  theme(panel.grid = element_blank(),
+        panel.border = element_blank(),
+        legend.title = element_blank(),
+        legend.text = element_text(color = "grey20", size = 10),
+        legend.position = "none",
+        axis.text.x = element_text(color = "grey20", size = 13),
+        axis.text.y = element_text(color = "grey20", size = 16),  
+        axis.title.x = element_text(color = "grey20", size = 22, vjust = 0, face = "bold"),
+        axis.title.y = element_text(color = "grey20", size = 16, vjust = 0.5, face = "bold"))
+
+
+### Dependency
+#### make plot
+dep_plot <- ggplot(summary_data, aes(x = "", y = Dependency_overall)) +
+  geom_boxplot(width = 0.15, fill = "#ad93ad", outlier.shape = NA) +
+  geom_jitter(width = 0, col = "#5c475b", fill = "#FFFFFF", alpha = .7, shape = 21, size = 1, stroke = 1) +
+  geom_hline(yintercept = 0.0, col = "red", lty = "dashed") +
+  xlab(" ") +
+  ylab("Dependency") +
+  scale_y_continuous(breaks = seq(-0.50, 0.50, 0.1), limits = c(-0.50, 0.50)) +
+  theme_classic() +
+  theme(panel.grid = element_blank(),
+        panel.border = element_blank(),
+        legend.title = element_blank(),
+        legend.text = element_text(color = "grey20", size = 12),
+        axis.text.x = element_text(color = "grey20", size = 16),
+        axis.text.y = element_text(color = "grey20", size = 16),  
+        axis.title.x = element_text(color = "grey20", size = 16, face = "bold"),
+        axis.title.y = element_text(color = "grey20", size = 16, vjust = 0.5, face = "bold"))
+```
+
+```{r data-replicated, fig.margin=TRUE, fig.cap='Fig. 6: Attempted replication of key data from the current study. (a) Jittered distribution of overall accuracy on the cued-recognition memory task. (b) Jittered distribution of the proportion of joint retrieval for the actual data and the independent statistical model (Ind. Model). (c) Jittered distribution of retrieval dependency scores. The dashed red line on the figure indicates the test value of 0 used in the t-test (i.e., retrieval dependency scores significantly greater than 0).', out.width="100%", out.height="30%", echo=TRUE}
+### Combine Plots for Rendered Report
+ggpubr::ggarrange(acc_plot, ret_plot, dep_plot, ncol = 3, nrow = 1, widths = c(1,2,1),
+                  labels = c('(a)', '(b)', '(c)'))
+```
+#### Calculate Cohen's d
+
+```{r}
+round(effectsize::cohens_d(key_test)$Cohens_d, 2)
+
+```
+
 ### Results of control measures
 
 *Three-panel graph with original, 1st replication, and your replication is ideal here*
 
-### Exploratory analyses
-
-Any follow-up analyses desired (not required).
 
 ## Discussion
 
