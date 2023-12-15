@@ -3,7 +3,6 @@ Script for anonymizing data from Qualtrics
 """
 import os
 import csv
-import pandas as pd
 from argparse import ArgumentParser
 
 cols_to_drop = [

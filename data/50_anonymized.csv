@@ -1,0 +1,226 @@
+success,timeout,failed_images,failed_audio,failed_video,trial_type,trial_index,time_elapsed,internal_node_id,subject_id,study_id,session_id,view_history,rt,stimulus,response,task,correct_response,attention_duration,correct,retrieval_group
+TRUE,FALSE,[],[],[],preload,0,3600,0.0-0.0,50,Study 50,Session 50,NA,NA,NA,NA,NA,NA,NA,NA,NA
+TRUE,NA,NA,NA,NA,fullscreen,1,8366,0.0-1.0,50,Study 50,Session 50,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,instructions,2,13712,0.0-2.0,50,Study 50,Session 50,"[{""page_index"":0,""viewing_time"":5345}]",5345,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,3,23642,0.0-3.0,50,Study 50,Session 50,NA,9928,"Welcome to the experiment. <br /><br />This experiment will take about 20 minutes. Please complete all in one sitting. <br /><br />For this study, <strong>please use</strong> a laptop or desktop computer (not a mobile phone or tablet). Also, please use either <u>Chrome or Firefox</u>. <br /><br />Once you begin, <strong>DO NOT</strong> refresh the browser, as the experiment will reset and you will lose your progress. <br /><br />Press the <strong class=""upperline"">B</strong> key on your keyboard to begin.",b,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,instructions,4,34856,0.0-4.0,50,Study 50,Session 50,"[{""page_index"":0,""viewing_time"":2650},{""page_index"":1,""viewing_time"":5766},{""page_index"":2,""viewing_time"":1793}]",10209,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,5,37872,0.0-5.0-0.0,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,6,43889,0.0-5.0-1.0,50,Study 50,Session 50,NA,null,img/encoding_events/Event_12.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,7,43894,0.0-5.0-2.0,50,Study 50,Session 50,NA,null,Please press the <strong><u>d</u></strong> key to continue,null,response,d,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,8,44408,0.0-5.0-0.1,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,9,50419,0.0-5.0-1.1,50,Study 50,Session 50,NA,null,img/encoding_events/Event_3.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,10,50425,0.0-5.0-2.1,50,Study 50,Session 50,NA,null,Please press the <strong><u>j</u></strong> key to continue,null,response,j,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,11,50938,0.0-5.0-0.2,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,12,56956,0.0-5.0-1.2,50,Study 50,Session 50,NA,null,img/encoding_events/Event_4.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,13,56969,0.0-5.0-2.2,50,Study 50,Session 50,NA,null,Please press the <strong><u>d</u></strong> key to continue,null,response,d,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,14,57483,0.0-5.0-0.3,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,15,63498,0.0-5.0-1.3,50,Study 50,Session 50,NA,null,img/encoding_events/Event_10.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,16,65584,0.0-5.0-2.3,50,Study 50,Session 50,NA,2084,Please press the <strong><u>f</u></strong> key to continue,f,response,f,6000,TRUE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,17,66087,0.0-5.0-0.4,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,18,72096,0.0-5.0-1.4,50,Study 50,Session 50,NA,null,img/encoding_events/Event_8.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,19,72099,0.0-5.0-2.4,50,Study 50,Session 50,NA,null,Please press the <strong><u>k</u></strong> key to continue,null,response,k,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,20,72614,0.0-5.0-0.5,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,21,78627,0.0-5.0-1.5,50,Study 50,Session 50,NA,null,img/encoding_events/Event_20.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,22,78633,0.0-5.0-2.5,50,Study 50,Session 50,NA,null,Please press the <strong><u>f</u></strong> key to continue,null,response,f,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,23,79147,0.0-5.0-0.6,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,24,85161,0.0-5.0-1.6,50,Study 50,Session 50,NA,null,img/encoding_events/Event_17.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,25,85173,0.0-5.0-2.6,50,Study 50,Session 50,NA,null,Please press the <strong><u>a</u></strong> key to continue,null,response,a,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,26,85684,0.0-5.0-0.7,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,27,91693,0.0-5.0-1.7,50,Study 50,Session 50,NA,null,img/encoding_events/Event_5.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,28,94450,0.0-5.0-2.7,50,Study 50,Session 50,NA,2756,Please press the <strong><u>d</u></strong> key to continue,d,response,d,6000,TRUE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,29,94953,0.0-5.0-0.8,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,30,100961,0.0-5.0-1.8,50,Study 50,Session 50,NA,null,img/encoding_events/Event_11.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,31,100964,0.0-5.0-2.8,50,Study 50,Session 50,NA,null,Please press the <strong><u>f</u></strong> key to continue,null,response,f,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,32,101473,0.0-5.0-0.9,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,33,107491,0.0-5.0-1.9,50,Study 50,Session 50,NA,null,img/encoding_events/Event_2.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,34,107503,0.0-5.0-2.9,50,Study 50,Session 50,NA,null,Please press the <strong><u>a</u></strong> key to continue,null,response,a,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,35,108014,0.0-5.0-0.10,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,36,114025,0.0-5.0-1.10,50,Study 50,Session 50,NA,null,img/encoding_events/Event_6.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,37,114037,0.0-5.0-2.10,50,Study 50,Session 50,NA,null,Please press the <strong><u>d</u></strong> key to continue,null,response,d,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,38,114540,0.0-5.0-0.11,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,39,120550,0.0-5.0-1.11,50,Study 50,Session 50,NA,null,img/encoding_events/Event_21.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,40,122807,0.0-5.0-2.11,50,Study 50,Session 50,NA,2255,Please press the <strong><u>f</u></strong> key to continue,f,response,f,6000,TRUE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,41,123320,0.0-5.0-0.12,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,42,129331,0.0-5.0-1.12,50,Study 50,Session 50,NA,null,img/encoding_events/Event_9.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,43,129335,0.0-5.0-2.12,50,Study 50,Session 50,NA,null,Please press the <strong><u>f</u></strong> key to continue,null,response,f,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,44,129840,0.0-5.0-0.13,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,45,135851,0.0-5.0-1.13,50,Study 50,Session 50,NA,null,img/encoding_events/Event_16.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,46,135862,0.0-5.0-2.13,50,Study 50,Session 50,NA,null,Please press the <strong><u>f</u></strong> key to continue,null,response,f,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,47,136373,0.0-5.0-0.14,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,48,142384,0.0-5.0-1.14,50,Study 50,Session 50,NA,null,img/encoding_events/Event_19.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,49,142391,0.0-5.0-2.14,50,Study 50,Session 50,NA,null,Please press the <strong><u>a</u></strong> key to continue,null,response,a,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,50,142892,0.0-5.0-0.15,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,51,148905,0.0-5.0-1.15,50,Study 50,Session 50,NA,null,img/encoding_events/Event_1.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,52,151611,0.0-5.0-2.15,50,Study 50,Session 50,NA,2705,Please press the <strong><u>k</u></strong> key to continue,k,response,k,6000,TRUE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,53,152126,0.0-5.0-0.16,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,54,158140,0.0-5.0-1.16,50,Study 50,Session 50,NA,null,img/encoding_events/Event_7.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,55,158142,0.0-5.0-2.16,50,Study 50,Session 50,NA,null,Please press the <strong><u>f</u></strong> key to continue,null,response,f,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,56,158649,0.0-5.0-0.17,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,57,164652,0.0-5.0-1.17,50,Study 50,Session 50,NA,null,img/encoding_events/Event_13.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,58,164659,0.0-5.0-2.17,50,Study 50,Session 50,NA,null,Please press the <strong><u>d</u></strong> key to continue,null,response,d,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,59,165170,0.0-5.0-0.18,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,60,171183,0.0-5.0-1.18,50,Study 50,Session 50,NA,null,img/encoding_events/Event_18.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,61,171188,0.0-5.0-2.18,50,Study 50,Session 50,NA,null,Please press the <strong><u>s</u></strong> key to continue,null,response,s,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,62,171700,0.0-5.0-0.19,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,63,177704,0.0-5.0-1.19,50,Study 50,Session 50,NA,null,img/encoding_events/Event_14.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,64,180167,0.0-5.0-2.19,50,Study 50,Session 50,NA,2461,Please press the <strong><u>j</u></strong> key to continue,j,response,j,6000,TRUE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,65,180671,0.0-5.0-0.20,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,66,186679,0.0-5.0-1.20,50,Study 50,Session 50,NA,null,img/encoding_events/Event_24.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,67,186682,0.0-5.0-2.20,50,Study 50,Session 50,NA,null,Please press the <strong><u>j</u></strong> key to continue,null,response,j,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,68,187198,0.0-5.0-0.21,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,69,193209,0.0-5.0-1.21,50,Study 50,Session 50,NA,null,img/encoding_events/Event_22.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,70,193214,0.0-5.0-2.21,50,Study 50,Session 50,NA,null,Please press the <strong><u>s</u></strong> key to continue,null,response,s,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,71,193724,0.0-5.0-0.22,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,72,199732,0.0-5.0-1.22,50,Study 50,Session 50,NA,null,img/encoding_events/Event_15.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,73,199737,0.0-5.0-2.22,50,Study 50,Session 50,NA,null,Please press the <strong><u>a</u></strong> key to continue,null,response,a,0,FALSE,NA
+NA,NA,NA,NA,NA,html-keyboard-response,74,200245,0.0-5.0-0.23,50,Study 50,Session 50,NA,null,"<div style=""font-size:60px;"">+</div>",null,fixation,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,75,206253,0.0-5.0-1.23,50,Study 50,Session 50,NA,null,img/encoding_events/Event_23.jpg,null,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,html-keyboard-response,76,208507,0.0-5.0-2.23,50,Study 50,Session 50,NA,2253,Please press the <strong><u>f</u></strong> key to continue,f,response,f,6000,TRUE,NA
+NA,NA,NA,NA,NA,instructions,77,251134,0.0-6.0,50,Study 50,Session 50,"[{""page_index"":0,""viewing_time"":1777},{""page_index"":1,""viewing_time"":6679},{""page_index"":2,""viewing_time"":4200},{""page_index"":3,""viewing_time"":16246},{""page_index"":4,""viewing_time"":6690},{""page_index"":5,""viewing_time"":5673},{""page_index"":6,""viewing_time"":1359}]",42625,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,image-keyboard-response,78,255065,0.0-7.0-0.0-0.0,50,Study 50,Session 50,NA,1427,img/testing_events/Bc/Test_Bc_Event_6.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,79,257828,0.0-7.0-0.0-0.1,50,Study 50,Session 50,NA,2761,img/testing_events/Bc/Test_Bc_Event_11.jpg,u,response,u,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,80,259380,0.0-7.0-0.0-0.2,50,Study 50,Session 50,NA,1550,img/testing_events/Bc/Test_Bc_Event_2.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,81,261132,0.0-7.0-0.0-0.3,50,Study 50,Session 50,NA,1750,img/testing_events/Bc/Test_Bc_Event_21.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,82,262644,0.0-7.0-0.0-0.4,50,Study 50,Session 50,NA,1511,img/testing_events/Bc/Test_Bc_Event_13.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,83,264059,0.0-7.0-0.0-0.5,50,Study 50,Session 50,NA,1414,img/testing_events/Bc/Test_Bc_Event_19.jpg,u,response,u,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,84,265629,0.0-7.0-0.0-0.6,50,Study 50,Session 50,NA,1568,img/testing_events/Bc/Test_Bc_Event_17.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,85,269514,0.0-7.0-0.0-0.7,50,Study 50,Session 50,NA,3884,img/testing_events/Bc/Test_Bc_Event_16.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,86,271135,0.0-7.0-0.0-0.8,50,Study 50,Session 50,NA,1619,img/testing_events/Bc/Test_Bc_Event_18.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,87,274433,0.0-7.0-0.0-0.9,50,Study 50,Session 50,NA,3296,img/testing_events/Bc/Test_Bc_Event_14.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,88,277845,0.0-7.0-0.0-0.10,50,Study 50,Session 50,NA,3410,img/testing_events/Bc/Test_Bc_Event_7.jpg,u,response,u,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,89,280835,0.0-7.0-0.0-0.11,50,Study 50,Session 50,NA,2988,img/testing_events/Bc/Test_Bc_Event_1.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,90,285405,0.0-7.0-0.0-0.12,50,Study 50,Session 50,NA,4568,img/testing_events/Bc/Test_Bc_Event_4.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,91,288156,0.0-7.0-0.0-0.13,50,Study 50,Session 50,NA,2749,img/testing_events/Bc/Test_Bc_Event_9.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,92,290243,0.0-7.0-0.0-0.14,50,Study 50,Session 50,NA,2086,img/testing_events/Bc/Test_Bc_Event_22.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,93,294788,0.0-7.0-0.0-0.15,50,Study 50,Session 50,NA,4543,img/testing_events/Bc/Test_Bc_Event_12.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,94,296280,0.0-7.0-0.0-0.16,50,Study 50,Session 50,NA,1490,img/testing_events/Bc/Test_Bc_Event_5.jpg,n,response,n,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,95,297999,0.0-7.0-0.0-0.17,50,Study 50,Session 50,NA,1717,img/testing_events/Bc/Test_Bc_Event_15.jpg,u,response,u,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,96,300929,0.0-7.0-0.0-0.18,50,Study 50,Session 50,NA,2929,img/testing_events/Bc/Test_Bc_Event_23.jpg,u,response,u,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,97,303736,0.0-7.0-0.0-0.19,50,Study 50,Session 50,NA,2805,img/testing_events/Bc/Test_Bc_Event_10.jpg,e,response,e,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,98,305184,0.0-7.0-0.0-0.20,50,Study 50,Session 50,NA,1449,img/testing_events/Bc/Test_Bc_Event_20.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,99,307834,0.0-7.0-0.0-0.21,50,Study 50,Session 50,NA,2649,img/testing_events/Bc/Test_Bc_Event_8.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,100,310883,0.0-7.0-0.0-0.22,50,Study 50,Session 50,NA,3047,img/testing_events/Bc/Test_Bc_Event_24.jpg,c,response,c,NA,TRUE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,101,315273,0.0-7.0-0.0-0.23,50,Study 50,Session 50,NA,4388,img/testing_events/Bc/Test_Bc_Event_3.jpg,c,response,u,NA,FALSE,Bc
+NA,NA,NA,NA,NA,image-keyboard-response,102,317922,0.0-7.0-1.0-0.0,50,Study 50,Session 50,NA,2648,img/testing_events/Ca/Test_Ca_Event_17.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,103,320396,0.0-7.0-1.0-0.1,50,Study 50,Session 50,NA,2473,img/testing_events/Ca/Test_Ca_Event_7.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,104,323400,0.0-7.0-1.0-0.2,50,Study 50,Session 50,NA,3002,img/testing_events/Ca/Test_Ca_Event_4.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,105,326312,0.0-7.0-1.0-0.3,50,Study 50,Session 50,NA,2911,img/testing_events/Ca/Test_Ca_Event_19.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,106,327715,0.0-7.0-1.0-0.4,50,Study 50,Session 50,NA,1401,img/testing_events/Ca/Test_Ca_Event_16.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,107,329470,0.0-7.0-1.0-0.5,50,Study 50,Session 50,NA,1754,img/testing_events/Ca/Test_Ca_Event_8.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,108,332258,0.0-7.0-1.0-0.6,50,Study 50,Session 50,NA,2787,img/testing_events/Ca/Test_Ca_Event_22.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,109,334283,0.0-7.0-1.0-0.7,50,Study 50,Session 50,NA,2023,img/testing_events/Ca/Test_Ca_Event_14.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,110,336102,0.0-7.0-1.0-0.8,50,Study 50,Session 50,NA,1818,img/testing_events/Ca/Test_Ca_Event_23.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,111,338137,0.0-7.0-1.0-0.9,50,Study 50,Session 50,NA,2033,img/testing_events/Ca/Test_Ca_Event_9.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,112,341213,0.0-7.0-1.0-0.10,50,Study 50,Session 50,NA,3074,img/testing_events/Ca/Test_Ca_Event_11.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,113,343054,0.0-7.0-1.0-0.11,50,Study 50,Session 50,NA,1840,img/testing_events/Ca/Test_Ca_Event_10.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,114,347811,0.0-7.0-1.0-0.12,50,Study 50,Session 50,NA,4755,img/testing_events/Ca/Test_Ca_Event_3.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,115,350131,0.0-7.0-1.0-0.13,50,Study 50,Session 50,NA,2317,img/testing_events/Ca/Test_Ca_Event_1.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,116,352123,0.0-7.0-1.0-0.14,50,Study 50,Session 50,NA,1991,img/testing_events/Ca/Test_Ca_Event_18.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,117,356911,0.0-7.0-1.0-0.15,50,Study 50,Session 50,NA,4786,img/testing_events/Ca/Test_Ca_Event_6.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,118,359578,0.0-7.0-1.0-0.16,50,Study 50,Session 50,NA,2666,img/testing_events/Ca/Test_Ca_Event_20.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,119,361175,0.0-7.0-1.0-0.17,50,Study 50,Session 50,NA,1595,img/testing_events/Ca/Test_Ca_Event_2.jpg,u,response,u,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,120,362487,0.0-7.0-1.0-0.18,50,Study 50,Session 50,NA,1311,img/testing_events/Ca/Test_Ca_Event_21.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,121,365122,0.0-7.0-1.0-0.19,50,Study 50,Session 50,NA,2633,img/testing_events/Ca/Test_Ca_Event_13.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,122,366343,0.0-7.0-1.0-0.20,50,Study 50,Session 50,NA,1228,img/testing_events/Ca/Test_Ca_Event_15.jpg,c,response,c,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,123,368200,0.0-7.0-1.0-0.21,50,Study 50,Session 50,NA,1846,img/testing_events/Ca/Test_Ca_Event_24.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,124,369309,0.0-7.0-1.0-0.22,50,Study 50,Session 50,NA,1108,img/testing_events/Ca/Test_Ca_Event_5.jpg,e,response,e,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,125,375396,0.0-7.0-1.0-0.23,50,Study 50,Session 50,NA,6085,img/testing_events/Ca/Test_Ca_Event_12.jpg,n,response,n,NA,TRUE,Ca
+NA,NA,NA,NA,NA,image-keyboard-response,126,378205,0.0-7.0-2.0-0.0,50,Study 50,Session 50,NA,2807,img/testing_events/Ba/Test_Ba_Event_18.jpg,n,response,n,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,127,379530,0.0-7.0-2.0-0.1,50,Study 50,Session 50,NA,1324,img/testing_events/Ba/Test_Ba_Event_9.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,128,381420,0.0-7.0-2.0-0.2,50,Study 50,Session 50,NA,1889,img/testing_events/Ba/Test_Ba_Event_7.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,129,382765,0.0-7.0-2.0-0.3,50,Study 50,Session 50,NA,1343,img/testing_events/Ba/Test_Ba_Event_10.jpg,e,response,n,NA,FALSE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,130,384414,0.0-7.0-2.0-0.4,50,Study 50,Session 50,NA,1648,img/testing_events/Ba/Test_Ba_Event_5.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,131,385907,0.0-7.0-2.0-0.5,50,Study 50,Session 50,NA,1491,img/testing_events/Ba/Test_Ba_Event_4.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,132,387109,0.0-7.0-2.0-0.6,50,Study 50,Session 50,NA,1200,img/testing_events/Ba/Test_Ba_Event_20.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,133,387971,0.0-7.0-2.0-0.7,50,Study 50,Session 50,NA,861,img/testing_events/Ba/Test_Ba_Event_15.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,134,389024,0.0-7.0-2.0-0.8,50,Study 50,Session 50,NA,1051,img/testing_events/Ba/Test_Ba_Event_22.jpg,u,response,n,NA,FALSE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,135,391503,0.0-7.0-2.0-0.9,50,Study 50,Session 50,NA,2478,img/testing_events/Ba/Test_Ba_Event_21.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,136,392956,0.0-7.0-2.0-0.10,50,Study 50,Session 50,NA,1452,img/testing_events/Ba/Test_Ba_Event_1.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,137,394301,0.0-7.0-2.0-0.11,50,Study 50,Session 50,NA,1343,img/testing_events/Ba/Test_Ba_Event_11.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,138,395655,0.0-7.0-2.0-0.12,50,Study 50,Session 50,NA,1353,img/testing_events/Ba/Test_Ba_Event_13.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,139,398258,0.0-7.0-2.0-0.13,50,Study 50,Session 50,NA,2602,img/testing_events/Ba/Test_Ba_Event_6.jpg,n,response,n,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,140,399508,0.0-7.0-2.0-0.14,50,Study 50,Session 50,NA,1248,img/testing_events/Ba/Test_Ba_Event_16.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,141,400669,0.0-7.0-2.0-0.15,50,Study 50,Session 50,NA,1159,img/testing_events/Ba/Test_Ba_Event_3.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,142,402051,0.0-7.0-2.0-0.16,50,Study 50,Session 50,NA,1380,img/testing_events/Ba/Test_Ba_Event_8.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,143,404603,0.0-7.0-2.0-0.17,50,Study 50,Session 50,NA,2550,img/testing_events/Ba/Test_Ba_Event_2.jpg,n,response,n,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,144,406334,0.0-7.0-2.0-0.18,50,Study 50,Session 50,NA,1729,img/testing_events/Ba/Test_Ba_Event_14.jpg,n,response,n,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,145,410399,0.0-7.0-2.0-0.19,50,Study 50,Session 50,NA,4064,img/testing_events/Ba/Test_Ba_Event_12.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,146,411642,0.0-7.0-2.0-0.20,50,Study 50,Session 50,NA,1241,img/testing_events/Ba/Test_Ba_Event_24.jpg,u,response,u,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,147,413206,0.0-7.0-2.0-0.21,50,Study 50,Session 50,NA,1562,img/testing_events/Ba/Test_Ba_Event_19.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,148,414912,0.0-7.0-2.0-0.22,50,Study 50,Session 50,NA,1705,img/testing_events/Ba/Test_Ba_Event_23.jpg,e,response,e,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,149,416246,0.0-7.0-2.0-0.23,50,Study 50,Session 50,NA,1332,img/testing_events/Ba/Test_Ba_Event_17.jpg,c,response,c,NA,TRUE,Ba
+NA,NA,NA,NA,NA,image-keyboard-response,150,421484,0.0-7.0-3.0-0.0,50,Study 50,Session 50,NA,5236,img/testing_events/Cb/Test_Cb_Event_24.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,151,422873,0.0-7.0-3.0-0.1,50,Study 50,Session 50,NA,1388,img/testing_events/Cb/Test_Cb_Event_1.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,152,423827,0.0-7.0-3.0-0.2,50,Study 50,Session 50,NA,952,img/testing_events/Cb/Test_Cb_Event_17.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,153,425276,0.0-7.0-3.0-0.3,50,Study 50,Session 50,NA,1448,img/testing_events/Cb/Test_Cb_Event_19.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,154,426920,0.0-7.0-3.0-0.4,50,Study 50,Session 50,NA,1633,img/testing_events/Cb/Test_Cb_Event_6.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,155,428110,0.0-7.0-3.0-0.5,50,Study 50,Session 50,NA,1188,img/testing_events/Cb/Test_Cb_Event_11.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,156,429433,0.0-7.0-3.0-0.6,50,Study 50,Session 50,NA,1321,img/testing_events/Cb/Test_Cb_Event_13.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,157,433294,0.0-7.0-3.0-0.7,50,Study 50,Session 50,NA,3859,img/testing_events/Cb/Test_Cb_Event_3.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,158,434729,0.0-7.0-3.0-0.8,50,Study 50,Session 50,NA,1434,img/testing_events/Cb/Test_Cb_Event_5.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,159,438886,0.0-7.0-3.0-0.9,50,Study 50,Session 50,NA,4156,img/testing_events/Cb/Test_Cb_Event_12.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,160,440528,0.0-7.0-3.0-0.10,50,Study 50,Session 50,NA,1640,img/testing_events/Cb/Test_Cb_Event_9.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,161,442889,0.0-7.0-3.0-0.11,50,Study 50,Session 50,NA,2360,img/testing_events/Cb/Test_Cb_Event_22.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,162,443819,0.0-7.0-3.0-0.12,50,Study 50,Session 50,NA,929,img/testing_events/Cb/Test_Cb_Event_20.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,163,446932,0.0-7.0-3.0-0.13,50,Study 50,Session 50,NA,3111,img/testing_events/Cb/Test_Cb_Event_16.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,164,448401,0.0-7.0-3.0-0.14,50,Study 50,Session 50,NA,1468,img/testing_events/Cb/Test_Cb_Event_8.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,165,450891,0.0-7.0-3.0-0.15,50,Study 50,Session 50,NA,2489,img/testing_events/Cb/Test_Cb_Event_4.jpg,e,response,e,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,166,452127,0.0-7.0-3.0-0.16,50,Study 50,Session 50,NA,1235,img/testing_events/Cb/Test_Cb_Event_21.jpg,u,response,u,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,167,453559,0.0-7.0-3.0-0.17,50,Study 50,Session 50,NA,1432,img/testing_events/Cb/Test_Cb_Event_10.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,168,457121,0.0-7.0-3.0-0.18,50,Study 50,Session 50,NA,3560,img/testing_events/Cb/Test_Cb_Event_7.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,169,458562,0.0-7.0-3.0-0.19,50,Study 50,Session 50,NA,1439,img/testing_events/Cb/Test_Cb_Event_15.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,170,460168,0.0-7.0-3.0-0.20,50,Study 50,Session 50,NA,1604,img/testing_events/Cb/Test_Cb_Event_2.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,171,461834,0.0-7.0-3.0-0.21,50,Study 50,Session 50,NA,1664,img/testing_events/Cb/Test_Cb_Event_18.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,172,463912,0.0-7.0-3.0-0.22,50,Study 50,Session 50,NA,2076,img/testing_events/Cb/Test_Cb_Event_23.jpg,n,response,n,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,173,465964,0.0-7.0-3.0-0.23,50,Study 50,Session 50,NA,2050,img/testing_events/Cb/Test_Cb_Event_14.jpg,c,response,c,NA,TRUE,Cb
+NA,NA,NA,NA,NA,image-keyboard-response,174,467723,0.0-7.0-4.0-0.0,50,Study 50,Session 50,NA,1757,img/testing_events/Ac/Test_Ac_Event_19.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,175,470436,0.0-7.0-4.0-0.1,50,Study 50,Session 50,NA,2711,img/testing_events/Ac/Test_Ac_Event_7.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,176,471420,0.0-7.0-4.0-0.2,50,Study 50,Session 50,NA,983,img/testing_events/Ac/Test_Ac_Event_9.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,177,474751,0.0-7.0-4.0-0.3,50,Study 50,Session 50,NA,3330,img/testing_events/Ac/Test_Ac_Event_4.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,178,477604,0.0-7.0-4.0-0.4,50,Study 50,Session 50,NA,2851,img/testing_events/Ac/Test_Ac_Event_2.jpg,c,response,c,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,179,478977,0.0-7.0-4.0-0.5,50,Study 50,Session 50,NA,1371,img/testing_events/Ac/Test_Ac_Event_3.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,180,480286,0.0-7.0-4.0-0.6,50,Study 50,Session 50,NA,1307,img/testing_events/Ac/Test_Ac_Event_23.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,181,481835,0.0-7.0-4.0-0.7,50,Study 50,Session 50,NA,1547,img/testing_events/Ac/Test_Ac_Event_24.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,182,483290,0.0-7.0-4.0-0.8,50,Study 50,Session 50,NA,1453,img/testing_events/Ac/Test_Ac_Event_18.jpg,c,response,c,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,183,484729,0.0-7.0-4.0-0.9,50,Study 50,Session 50,NA,1437,img/testing_events/Ac/Test_Ac_Event_13.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,184,486164,0.0-7.0-4.0-0.10,50,Study 50,Session 50,NA,1434,img/testing_events/Ac/Test_Ac_Event_11.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,185,487893,0.0-7.0-4.0-0.11,50,Study 50,Session 50,NA,1730,img/testing_events/Ac/Test_Ac_Event_22.jpg,c,response,c,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,186,488880,0.0-7.0-4.0-0.12,50,Study 50,Session 50,NA,986,img/testing_events/Ac/Test_Ac_Event_5.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,187,490392,0.0-7.0-4.0-0.13,50,Study 50,Session 50,NA,1509,img/testing_events/Ac/Test_Ac_Event_20.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,188,492360,0.0-7.0-4.0-0.14,50,Study 50,Session 50,NA,1967,img/testing_events/Ac/Test_Ac_Event_12.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,189,494142,0.0-7.0-4.0-0.15,50,Study 50,Session 50,NA,1780,img/testing_events/Ac/Test_Ac_Event_1.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,190,495720,0.0-7.0-4.0-0.16,50,Study 50,Session 50,NA,1576,img/testing_events/Ac/Test_Ac_Event_14.jpg,e,response,c,NA,FALSE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,191,496903,0.0-7.0-4.0-0.17,50,Study 50,Session 50,NA,1182,img/testing_events/Ac/Test_Ac_Event_17.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,192,497955,0.0-7.0-4.0-0.18,50,Study 50,Session 50,NA,1051,img/testing_events/Ac/Test_Ac_Event_21.jpg,u,response,u,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,193,498954,0.0-7.0-4.0-0.19,50,Study 50,Session 50,NA,998,img/testing_events/Ac/Test_Ac_Event_8.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,194,501040,0.0-7.0-4.0-0.20,50,Study 50,Session 50,NA,2085,img/testing_events/Ac/Test_Ac_Event_10.jpg,c,response,c,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,195,502135,0.0-7.0-4.0-0.21,50,Study 50,Session 50,NA,1093,img/testing_events/Ac/Test_Ac_Event_6.jpg,c,response,c,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,196,504241,0.0-7.0-4.0-0.22,50,Study 50,Session 50,NA,2105,img/testing_events/Ac/Test_Ac_Event_15.jpg,n,response,n,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,197,505506,0.0-7.0-4.0-0.23,50,Study 50,Session 50,NA,1263,img/testing_events/Ac/Test_Ac_Event_16.jpg,e,response,e,NA,TRUE,Ac
+NA,NA,NA,NA,NA,image-keyboard-response,198,507117,0.0-7.0-5.0-0.0,50,Study 50,Session 50,NA,1609,img/testing_events/Ab/Test_Ab_Event_14.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,199,509230,0.0-7.0-5.0-0.1,50,Study 50,Session 50,NA,2103,img/testing_events/Ab/Test_Ab_Event_10.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,200,510330,0.0-7.0-5.0-0.2,50,Study 50,Session 50,NA,1098,img/testing_events/Ab/Test_Ab_Event_15.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,201,512333,0.0-7.0-5.0-0.3,50,Study 50,Session 50,NA,2002,img/testing_events/Ab/Test_Ab_Event_16.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,202,513372,0.0-7.0-5.0-0.4,50,Study 50,Session 50,NA,1038,img/testing_events/Ab/Test_Ab_Event_9.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,203,514643,0.0-7.0-5.0-0.5,50,Study 50,Session 50,NA,1270,img/testing_events/Ab/Test_Ab_Event_18.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,204,515815,0.0-7.0-5.0-0.6,50,Study 50,Session 50,NA,1170,img/testing_events/Ab/Test_Ab_Event_19.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,205,518175,0.0-7.0-5.0-0.7,50,Study 50,Session 50,NA,2358,img/testing_events/Ab/Test_Ab_Event_4.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,206,520130,0.0-7.0-5.0-0.8,50,Study 50,Session 50,NA,1954,img/testing_events/Ab/Test_Ab_Event_7.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,207,521671,0.0-7.0-5.0-0.9,50,Study 50,Session 50,NA,1539,img/testing_events/Ab/Test_Ab_Event_1.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,208,522795,0.0-7.0-5.0-0.10,50,Study 50,Session 50,NA,1121,img/testing_events/Ab/Test_Ab_Event_3.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,209,523752,0.0-7.0-5.0-0.11,50,Study 50,Session 50,NA,956,img/testing_events/Ab/Test_Ab_Event_11.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,210,525028,0.0-7.0-5.0-0.12,50,Study 50,Session 50,NA,1274,img/testing_events/Ab/Test_Ab_Event_20.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,211,526367,0.0-7.0-5.0-0.13,50,Study 50,Session 50,NA,1338,img/testing_events/Ab/Test_Ab_Event_8.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,212,527638,0.0-7.0-5.0-0.14,50,Study 50,Session 50,NA,1270,img/testing_events/Ab/Test_Ab_Event_2.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,213,528736,0.0-7.0-5.0-0.15,50,Study 50,Session 50,NA,1097,img/testing_events/Ab/Test_Ab_Event_17.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,214,529637,0.0-7.0-5.0-0.16,50,Study 50,Session 50,NA,899,img/testing_events/Ab/Test_Ab_Event_21.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,215,530644,0.0-7.0-5.0-0.17,50,Study 50,Session 50,NA,1006,img/testing_events/Ab/Test_Ab_Event_22.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,216,531813,0.0-7.0-5.0-0.18,50,Study 50,Session 50,NA,1167,img/testing_events/Ab/Test_Ab_Event_23.jpg,c,response,c,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,217,533570,0.0-7.0-5.0-0.19,50,Study 50,Session 50,NA,1756,img/testing_events/Ab/Test_Ab_Event_12.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,218,534871,0.0-7.0-5.0-0.20,50,Study 50,Session 50,NA,1299,img/testing_events/Ab/Test_Ab_Event_6.jpg,u,response,u,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,219,535719,0.0-7.0-5.0-0.21,50,Study 50,Session 50,NA,846,img/testing_events/Ab/Test_Ab_Event_5.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,220,537120,0.0-7.0-5.0-0.22,50,Study 50,Session 50,NA,1400,img/testing_events/Ab/Test_Ab_Event_24.jpg,n,response,n,NA,TRUE,Ab
+NA,NA,NA,NA,NA,image-keyboard-response,221,538076,0.0-7.0-5.0-0.23,50,Study 50,Session 50,NA,955,img/testing_events/Ab/Test_Ab_Event_13.jpg,e,response,e,NA,TRUE,Ab
+NA,NA,NA,NA,NA,survey-text,222,555411,0.0-8.0,50,Study 50,Session 50,NA,17313,NA,"{""Q0"":""No"",""Q1"":""No"",""Q2"":""Nope""}",NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,survey-html-form,223,585505,0.0-9.0,50,Study 50,Session 50,NA,30091,NA,"{""Gender"":""Male"",""Age"":""24"",""ColorBlind"":""No"",""Education"":""Some College, no degree"",""Income"":""$75,000-$99,999"",""Race"":""White"",""Fluent"":""Yes"",""AgeEnglish"":""0"",""Country"":""United States""}",NA,NA,NA,NA,NA
+TRUE,NA,NA,NA,NA,fullscreen,224,585507,0.0-10.0,50,Study 50,Session 50,NA,NA,NA,NA,NA,NA,NA,NA,NA
