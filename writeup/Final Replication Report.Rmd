@@ -47,7 +47,7 @@ I will precisely follow the methods quoted directly from the original study in m
 
 **Procedure**
 
-In my experiment, I will adhere closely to the methods directly quoted from the original study. While the original study was conducted in-person on a 13-inch laptop screen---likely aiding in attention control and minimizing external distractions---I will ensure participants use only a laptop or desktop. Additionally, the experiment will automatically launch in fullscreen mode and notify me if a participant exits this mode.
+In my experiment, I will adhere closely to the methods directly quoted from the original study. My experiment achieves a replication closeness score of 'very close'. The methodology strictly follows that of the original study, with modifications limited to the physical setting. While the original study was conducted in-person on a 13-inch laptop screen---likely aiding in attention control and minimizing external distractions---I will ensure participants use only a laptop or desktop computer. Additionally, the experiment will automatically launch in fullscreen mode and notify me if a participant exits this mode.
 
 "All participants were tested individually. The task procedure administered to children consisted of two encoding-test blocks, which occurred immediately after one another. Each block consisted of 12 encoding and 72 test trials, all presented on a 13-in. laptop screen. Prior to encoding, participants were told that they would see many different stories and that they should pay close attention to all of the different elements, including the scene, person, and object in each story. Then, participants viewed a series of events (12 s each; 0.5 s intertrial interval). A short audio-recorded narrative accompanied each event (e.g.,"Alice went to the aquarium, but she dropped her wallet there; the wallet was lost in the aquarium"; see [Fig. 1a](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7137142/figure/fig1-0956797619879441/)). Each narrative consisted of three sentences, with each sentence highlighting one pairwise association within the event. The order of the pairwise associations within each narrative was not fixed or counterbalanced across the events. The narrative was constructed this way to engage children in the task and to increase the likelihood that children would pay attention to all of the elements in an event. Prior to encoding, we provided one example (a playground, Elastigirl, a hat) in order to acquaint the participants with the encoding task.
 
@@ -104,8 +104,7 @@ library(BayesFactor)
 
 ## Import data
 ### get all data files from directory
-data_files <- list.files(file.path("~/Desktop/ngo19_rescue/exp/data"), pattern = "*.csv", full.names = TRUE)
-data_files
+data_files <- list.files(file.path("~/Desktop/ngo19_rescue/data"), pattern = "*.csv", full.names = TRUE)
 
 ### read individual data files to list
 all_data <- lapply(data_files, read.csv)
@@ -193,10 +192,6 @@ if(!221 %in% all_data_cleaned$trial_index) {
 
 ```{r}
 
-print("Data after filtering:")
-print(head(all_data_cleaned))
-
-
 
 # Group the cleaned data by subject_id, then count the number of rows for each group
 participant_row_counts <- all_data_cleaned |>
@@ -208,7 +203,7 @@ participant_row_counts <- all_data_cleaned |>
 print(participant_row_counts)
 
 all_data_cleaned <- all_data_cleaned |>
-  mutate(accuracy = ifelse(correct == "true", 1, 0)) |>
+  mutate(accuracy = ifelse(correct, 1, 0)) |>
   select(subject_id, trial_index, time_elapsed, rt, stimulus, task,
          retrieval_group, response, correct_response, correct, accuracy) |>
   separate(stimulus, c(NA, NA, NA, NA, "id"), sep = "_", remove = FALSE, extra = "merge", fill = "right")
@@ -493,7 +488,7 @@ print(1/key_test_bf) ## BF in support of the null
 
 ### Retrieval Dependency Results
 
-I conducted a one-sample *t*-test to determine whether dependency (data -- independent model) exceeded zero for young adults, which indicated that there was a significant difference for retrieval dependency scores greater than the test value of zero, *t*(`r key_test$parameter`) = `r round(key_test$statistic, 2)`, *p* \< 0.001, Cohen's *d* = `r round(effectsize::cohens_d(key_test)$Cohens_d, 2)`, 95% confidence interval (CI) = \[`r round(effectsize::cohens_d(key_test)$CI_low, 2)`, `r as.character(effectsize::cohens_d(key_test)$CI_high)`\], $BF_{01}$ = 2.25, *M* = `r round(mean(summary_data$Dependency_overall), 2)`, *SD* = `r round(sd(summary_data$Dependency_overall), 2)`, *SEM* = `r round((sd(summary_data$Dependency_overall) / sqrt(12)), 2)`, 95% CI = \[`r round(mean(summary_data$Dependency_overall) - qnorm(0.975)*sd(summary_data$Dependency_overall)/sqrt(12), 2)`, `r round(mean(summary_data$Dependency_overall) + qnorm(0.975)*sd(summary_data$Dependency_overall)/sqrt(12), 2)`\] (see Figure 6c). Original data from [@ngo2019development]: *M* = .07, *SD* = .05, *SEM* = .01, 95% CI = \[.05, .08\].
+I conducted a one-sample *t*-test to determine whether dependency (data -- independent model) exceeded zero for young adults, which indicated that there was a significant difference for retrieval dependency scores greater than the test value of zero, *t*(`r key_test$parameter`) = `r round(key_test$statistic, 2)`, *p* \< 0.033, Cohen's *d* = `r round(effectsize::cohens_d(key_test)$Cohens_d, 2)`, 95% confidence interval (CI) = \[`r round(effectsize::cohens_d(key_test)$CI_low, 2)`, `r as.character(effectsize::cohens_d(key_test)$CI_high)`\], $BF_{01}$ = 2.25, *M* = `r round(mean(summary_data$Dependency_overall), 2)`, *SD* = `r round(sd(summary_data$Dependency_overall), 2)`, *SEM* = `r round((sd(summary_data$Dependency_overall) / sqrt(12)), 2)`, 95% CI = \[`r round(mean(summary_data$Dependency_overall) - qnorm(0.975)*sd(summary_data$Dependency_overall)/sqrt(12), 2)`, `r round(mean(summary_data$Dependency_overall) + qnorm(0.975)*sd(summary_data$Dependency_overall)/sqrt(12), 2)`\] (see Figure 6c). Original data from [@ngo2019development]: *M* = .07, *SD* = .05, *SEM* = .01, 95% CI = \[.05, .08\].
 
 #### Overall Accuracy
 
@@ -587,23 +582,20 @@ ggpubr::ggarrange(acc_plot, ret_plot, dep_plot, ncol = 3, nrow = 1, widths = c(1
                   labels = c('(a)', '(b)', '(c)'))
 ```
 
-
 ![Fig:The comparison between the original study and its replications.](images/original_1st_2nd_comparison.png)
-
 
 ## Discussion
 
 ## Mini meta analysis
 
-The third replication comes from Ngo et al. (2021), "Relational binding and holistic retrieval in ageing." 
-https://www.tandfonline.com/doi/full/10.1080/09658211.2021.1974047
+The third replication comes from Ngo et al. (2021), "Relational binding and holistic retrieval in ageing." https://www.tandfonline.com/doi/full/10.1080/09658211.2021.1974047
 
 ```{r}
 library(metafor)
 
 study_data <- data.frame(
 study = c("Original", "First Replication", "Second Replication", "Third Replication"),
-effect_size = c(1.32, 0.15, 0.96, 1.63), 
+effect_size = c(1.32, 0.15, 0.21, 1.63), 
 SE = c(0.07, 0.04, 0.05, 0.07), 
 N = c(31, 12, 77, 24) 
 )
@@ -615,15 +607,14 @@ summary(meta_analysis_results)
 
 ```
 
-*Combining across the original paper, 1st replication, 2nd replication, and 3rd replication, the aggregate effect size is 1.02.*
+*Combining across the original paper, 1st replication, 2nd replication, and 3rd replication, the aggregate effect size is 0.83.*
 
 ### Summary of Replication Attempt
 
-In the second replication attempt of Ngo et al. (2019), a one-sample t-test revealed a significant retrieval dependency score greater than zero (t(76) = 8.39, p < 0.001), with a Cohen's d of 0.96. This result indicates a strong effect of retrieval dependency within the sample, successfully replicating the findings of the original study.
+In the second replication attempt of Ngo et al. (2019), a one-sample t-test revealed a significant retrieval dependency score greater than zero (t(76) = 1.87, p \< 0.033), with a Cohen's d of 0.21. This result indicates a moderate effect of retrieval dependency within the sample, successfully replicating the findings of the original study. Given these factors, on a scale of 0 (did not replicate) to 1 (fully replicated), this replication attempt would be scored at approximately 0.75, indicating that it mostly replicated the original results with some differences potentially attributable to variations in the experimental setup or sample characteristics.
 
 A notable methodological distinction in this replication was the larger sample size, which likely contributed to the robustness and reliability of the results. Additionally, the implementation of attention check key presses every four encoding trials was an approach aimed at maintaining participant engagement and ensuring data accuracy throughout the experiment. I believe these enhancements may have been crucial in bolstering the validity of our findings.
 
 However, it is important to note that when randomly subsampling 31 participants from the total of 77 I collected, the results were not significant. This outcome was observed in a single instance of subsampling, suggesting the need for further investigation. Repeated subsampling with different groups of 31 participants could provide insight into the consistency of the effect size across smaller samples. This approach would help in understanding the variability of the results and the influence of sample size on the significance of the findings.
 
-Moreover, the introduction of a random effect per participant in future studies could offer a more nuanced way to handle outliers. This method would allow for a better understanding of individual differences and their impact on the overall results. 
-
+Moreover, the introduction of a random effect per participant in future studies could offer a more nuanced way to handle outliers. This method would allow for a better understanding of individual differences and their impact on the overall results.
