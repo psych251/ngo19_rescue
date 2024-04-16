@@ -99,12 +99,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 ## Load Relevant Libraries and Functions
+library(here)
 library(tidyverse)
 library(BayesFactor)
 
 ## Import data
 ### get all data files from directory
-data_files <- list.files(file.path("~/Desktop/ngo19_rescue/data"), pattern = "*.csv", full.names = TRUE)
+data_files <- list.files(here("data"), pattern = "*.csv", full.names = TRUE)
 
 ### read individual data files to list
 all_data <- lapply(data_files, read.csv)
